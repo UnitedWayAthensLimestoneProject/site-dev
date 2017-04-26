@@ -50,6 +50,7 @@ function get_main_menu()
 		<a href="#" style="background-color:#f57814" class="dropbtn">Get Involved</a>
 		<div class="dropdown-content">
 		  <a href="volunteer.php">Community Volunteer Registration Form</a>
+                  <a href="eventcal.php">Volunteer Event Registration</a>
 		  <a href="disaster_volunteer.php">Disaster Volunteer Registration Form</a>
 		  <a href="group.php">Group Volunteer Registration Form</a>
 		  <a href="front_desk.php">Volunteer Front Desk Program</a>

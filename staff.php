@@ -75,7 +75,7 @@
 				Phone: <a href="tel:2562332323, 10">256-233-2323 ext: 10</a><br/>
 				<hr> <!-- horizontal bar -->
 				
-				<h2>Leigh Andrews</h2> <!-- Header 2 style -->
+				<h2>Leigh Fogg</h2> <!-- Header 2 style --><!-- Updated 03/01/2017 to reflect last name change-->
 				<!-- paragraph -->
 				<p>
 				<!-- Staff member's role -->
