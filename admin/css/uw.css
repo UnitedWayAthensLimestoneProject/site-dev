@@ -1197,3 +1197,23 @@ table.editopptable td {
 	font-size: 14px;
 }
 
+
+#eventTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#eventTable th, td {
+    text-align: center;
+    padding: 8px;
+	width: 160px;
+}
+
+#eventTable tr:nth-child(even){background-color: #ffd280}
+.Cal_input
+{
+	display: inline-block;
+    margin: 2px;
+    text-align: center;
+}
+

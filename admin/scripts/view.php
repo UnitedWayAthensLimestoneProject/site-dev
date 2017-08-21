@@ -1,7 +1,7 @@
 <?php
 
 	require_once 'authorize.php';
-	require_once 'database_connection.php';
+	require_once 'db_connection.php';
 
 	define("SUCCESS_MESSAGE", "success");
 	define("ERROR_MESSAGE", "error");
@@ -245,7 +245,7 @@ EOD;
 		} else {
 			$adminReviewDonationLinkFormat = 'adminReviewDonationNoLink';
 		}
-		
+	
 		echo <<<EOD
 	<div id="adminWrapper">
 		<div id="adminMenuSidebar">
@@ -256,6 +256,7 @@ EOD;
 				<li><a href="admin_opportunities.php" id="adminOpportunitiesLink">Opportunities</a></li>
 				-->
 			<!-- **ASU2016** End edit coded 6/19/2016 -->
+				<li><a href="view_event.php" id="adminSkillsLink">Events Calendar</a></li>
 				<li><a href="admin_skills.php" id="adminSkillsLink">Skills</a></li>
 				<li><a href="admin_users.php" id="adminUsersLink">Users</a></li>
 				<li><a href="admin_vols.php" id="adminVolsLink">Volunteers</a></li>
