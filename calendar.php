@@ -1,7 +1,7 @@
-<?php 
-
-	require_once("./inc/functions.php");
-	require_once("admin/db_connection.php");
+<?php
+    define("__ROOT__", dirname(dirname(__FILE__)));
+	require_once("inc/functions.php");
+    require_once("scripts/database_connection.php");
 
 	$query = "SELECT * FROM calendar ";
 	$query .= "ORDER BY date DESC";
@@ -13,7 +13,7 @@
 <!-- unitedwayathenslimestone.com - Calendar Page -->
 
 <html lang="en">
-	<head> 
+	<head>
 	<!-- header -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,17 +32,17 @@
 	</head>
 		<body>
 		<?php get_home_banner(); ?>
-		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->		
+		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!-- Main Content Starts Below-->								
+<!-- Main Content Starts Below-->
 
 						<div id = "wrapper1">
 						          <h1>Event Calendar</h1> <!-- Header 1 style -->
-								
+
 								 <?php
-	
-							if (mysqli_num_rows($event_set) > 0)	
-							{ 
+
+							if (mysqli_num_rows($event_set) > 0)
+							{
 								while ($row = mysqli_fetch_assoc($event_set))
 								{ ?>  <!-- Run this code while the number of events is greater than 0 -->
 
@@ -53,7 +53,7 @@
 								    <th>Location</th>
 								  </tr>
 								  <tr>
-								    <td> <?php 
+								    <td> <?php
 								 $time = $row['time'];
 								 $date = $row['date'];
 								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
@@ -61,7 +61,7 @@
 								    <td> <?php echo htmlentities($row['event']);?> </td>
 								    <td><a href="http://maps.google.com/?q=<?php echo htmlentities($row['location']);?>" target="_blank"><?php echo htmlentities($row['location']); ?></a></td>
 								  </tr>
-								   
+
 								</table>
 
 								<?php 
@@ -74,14 +74,14 @@
 								<div id = "panelError">	<!-- If no events this message occurs -->
 								No Current Events
 								<?php
-							} 
-							
+							}
+
 							?>
 
 
 				</div> <!-- close css division "wrapper1" -->
 		<?php get_home_footer(); ?>
-		</div> <!-- close css division "darkframe" - this is the blue border around the content -->  			
+		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>
 		<script src="js/bootstrap.js"></script>
 </html>
