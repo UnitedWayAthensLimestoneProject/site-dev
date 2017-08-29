@@ -1,7 +1,7 @@
-<?php 
+<?php
 
-	require_once("./inc/functions.php"); 
-	
+	require_once("./inc/functions.php");
+
 ?>
 <!DOCTYPE html>
 <!-- unitedwayathenslimestone.com - Volunteer Page -->
@@ -25,12 +25,12 @@
 	</head>
 		<body>
 		<?php get_home_banner(); ?>
-		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->		
+		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->	
-		<br> 
+<!--Sidebar Code-->
+		<br>
 		<div id="wrapper2"> <!-- css division "wrapper2" -->
-			<div id = "sideQuote"><br><br> <!-- css division "sidQuote" --> 
+			<div id = "sideQuote"><br><br> <!-- css division "sidQuote" -->
                     <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides="li" data-cycle-random="true" data-cycle-loop="100" data-index=1> <!-- using Cylce2, slideshow of photos -->
 					   <ul>
 							<li><img src="images/sidebar1.jpg" alt='sidebar1'/></li>
@@ -41,7 +41,7 @@
 							<li><img src="images/sidebar6.jpg" alt='sidebar6'/></li>
 							<li><img src="images/sidebar7.jpg" alt='sidebar7'/></li>
 							<li><img src="images/sidebar8.jpg" alt='sidebar8'/></li>
-					   </ul> 
+					   </ul>
 					</div>
 					<div class="spacer heightThirteen"></div> <!-- css division "heightThirteen" for sidebar spacing-->
 					<div id="center spacer"> <!-- css division "heightThirteen" for sidebar divider -->
@@ -55,11 +55,11 @@
 					   		<li><p class="left">&ldquo;Nobody can do everything, but everyone can do something.&rdquo;</p><p>&ndash;Author unknown</p></li>
 					   		<li><p class="left">&ldquo;Service to others is the rent you pay for your room here on earth.&rdquo;</p><p>&ndash;Mohammed Ali</p></li>
 					   		<li><p class="left">&ldquo;The best and most beautiful things in the world cannot be see or even touched - they must be felt with the heart.&rdquo;</p><p>&ndash;Helen Keller</p></li>
-						</ul>	  
-					</div><br><br>                      			
+						</ul>
+					</div><br><br>
               </div></div>  <!-- close css division "sidQuote" -->
-<!-- Main Content Starts Below-->								
-				<div id="content"> <!-- css division "content" -->			
+<!-- Main Content Starts Below-->
+				<div id="content"> <!-- css division "content" -->
 				<h2>Kay McFarlen</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
 				<p>
@@ -70,7 +70,7 @@
 				<!-- Phone number with link to call from a smartphone  -->
 				Phone: <a href="tel:2562332323, 11">256-233-2323 ext: 11</a><br/>
 				<hr> <!-- horizontal bar -->
-				
+
 				<h2>Diane Craig</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
 				<p>
@@ -81,9 +81,20 @@
 				<!-- Phone number with link to call from a smartphone  -->
 				Phone: <a href="tel:2562332323, 10">256-233-2323 ext: 10</a><br/>
 				<hr> <!-- horizontal bar -->
-							
+
+				<h2>Shelley Jones</h2> <!-- Header 2 style -->
+				<!-- paragraph -->
+				<p>
+				<!-- Staff member's role -->
+				Executive Administrative Assistant</br>
+				<!-- Email address with link to open a new outgoing email -->
+				E-mail: <a href="mailto:shelleyjones@unitedwayalc.com?" title="shelleyjones@unitedwayalc.com">shelleyjones@unitedwayalc.com</a><br>
+				<!-- Phone number with link to call from a smartphone  -->
+				Phone: <a href="tel:2562332323, 15">256-233-2323 ext: 15</a><br/>
+				<hr> <!-- horizontal bar -->
+
 				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" --> 
+			</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>
