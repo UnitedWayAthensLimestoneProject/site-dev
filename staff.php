@@ -86,7 +86,7 @@
 				<!-- paragraph -->
 				<p>
 				<!-- Staff member's role -->
-				Executive Administrative Assistant</br>
+				Volunteer Administrative Manager</br>
 				<!-- Email address with link to open a new outgoing email -->
 				E-mail: <a href="mailto:shelleyjones@unitedwayalc.com?" title="shelleyjones@unitedwayalc.com">shelleyjones@unitedwayalc.com</a><br>
 				<!-- Phone number with link to call from a smartphone  -->
