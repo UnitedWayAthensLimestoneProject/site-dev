@@ -37,6 +37,7 @@ function get_main_menu()
 				          <ul class="dropdown-menu">
 				            <li><a href="https://www.facebook.com/United-Way-Athens-Limestone-131401963542374/?ref=ts" target = "_blank">Facebook</a></li>
 				            <li><a href="https://twitter.com/uwlimestone" target = "_blank">Twitter</a></li>
+										<li><a href="https://www.instagram.com/unitedwayalc/" target = "_blank">Instagram</a></li>
 							<li class='; if($page == "media.php"){echo '"active"';} echo'><a href="media.php">Videos</a></li>
 			              </ul>
 			            </li>
@@ -64,17 +65,17 @@ function get_main_menu()
 		              		<li><a  style="background-color:#f57814" href="donate.php">DONATE</a></li>
 			              </ul>
 			            </li>
-			            
-			            
-			         
+
+
+
 			          </ul>
 			        </div>
 				    <!-- /.navbar-collapse -->
 			      </div>
 				  <!-- /.container-fluid -->
-				 
-				  
-				  
+
+
+
 			  </nav>
 ';
 
