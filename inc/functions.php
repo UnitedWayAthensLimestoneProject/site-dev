@@ -95,7 +95,6 @@ echo '		<div id = "wrapper"> <!-- css division "wrapper" -->
 ';
 
 return;
-
 }
 
 function get_home_footer()
@@ -132,9 +131,23 @@ echo '<!-- Footer with info and links -->
 ';
 
 return;
-
 }
 
-
+//IN DEVELOPMENT....
+//looks for "sidebar1" image (can be any image file type)
+//returns name of file if found, returns dne.jpg if not found
+function sidebar1()
+{
+	$dir = "sidebarImgs/";
+	$filesAry = scandir($dir);
+	$sb = "sidebar1";
+	for ($i = 0; $i < count($filesAry); $i++)
+	{
+		if(strpos($filesAry[$i], $sb) != false) {
+			return $filesAry[$i];
+		}
+	}
+	return "dne.jpg";
+}
 
 ?>

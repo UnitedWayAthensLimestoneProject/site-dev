@@ -33,39 +33,87 @@
 				<div id="content"> <!-- css division "content" -->
 					<h1>Admin Test Page - for editing sidebar content</h1> <!-- Header 1 style -->
           <!-- PUT STUFF HERE -->
-					<!-- test btns..
-          <style>
-          .customBtn {
-              background-color: #ECF0F1;
-              border: #000000;
-              color: black;
-              padding: 4px 20px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 13px;
-              margin: 6px 5px;
-              cursor: pointer;
-              border-radius: 5px;
-              border-style: solid;
-              border-width: 1px;
-          }
-          </style>
-            <input type="button" class="customBtn" value="Image 1"><br/>
-            <input type="button" class="customBtn" value="Image 2"><br/>
-            <input type="button" class="customBtn" value="Image 3"><br/>
-            <input type="button" class="customBtn" value="Image 4"><br/>
-            <input type="button" class="customBtn" value="Image 5"><br/>
-            <input type="button" class="customBtn" value="Image 6"><br/>
-            <input type="button" class="customBtn" value="Image 7"><br/>
-            <input type="button" class="customBtn" value="Image 8"><br/>
-            <input type="button" class="customBtn" value="Image 9"><br/>
-					-->
+					<p>New uploaded images will overwrite old images (but doesn't work yet)</p>
+					<br>
 
-						<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-							<input type="file" name="file"> <br> <input type="submit" value="Submit">
-						</form>
+					<!-- style class to resize sidebar images -->
+					<style>
+					.sideImg {
+						position: relative;
+						float: left;
+						width:  140px;
+						height: 100px;
+						background-position: 50% 50%;
+						background-repeat:   no-repeat;
+						background-size:     cover;
+					}
+					</style>
 
+					<!-- sidebar1.jpg -->
+					<img src="sidebarImgs/sidebar1.jpg" alt="sidebar1.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar2.jpg -->
+					<img src="sidebarImgs/sidebar2.jpg" alt="sidebar2.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar3.jpg -->
+					<img src="sidebarImgs/sidebar3.jpg" alt="sidebar3.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar4.jpg -->
+					<img src="sidebarImgs/sidebar4.jpg" alt="sidebar4.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar5.jpg -->
+					<img src="sidebarImgs/sidebar5.jpg" alt="sidebar5.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar6.jpg -->
+					<img src="sidebarImgs/sidebar6.jpg" alt="sidebar6.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar7.jpg -->
+					<img src="sidebarImgs/sidebar7.jpg" alt="sidebar7.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- sidebar8.jpg -->
+					<img src="sidebarImgs/sidebar8.jpg" alt="sidebar8.jpg" class="sideImg">
+
+					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+					</form>
+
+					<br> <br>
+					<!-- END sidebar images and forms -->
 
 					  	<hr> <!-- horizontal bar -->
 				</div> <!-- close css division "content" -->
