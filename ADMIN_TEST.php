@@ -53,7 +53,9 @@
 					<img src="sidebarImgs/sidebar1.jpg" alt="sidebar1.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar1">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
