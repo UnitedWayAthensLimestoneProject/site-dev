@@ -33,7 +33,7 @@
 				<div id="content"> <!-- css division "content" -->
 					<h1>Admin Test Page - for editing sidebar content</h1> <!-- Header 1 style -->
           <!-- PUT STUFF HERE -->
-					<p>New uploaded images will overwrite old images (but doesn't work yet)</p>
+					<p>New uploaded images will overwrite old images</p>
 					<br>
 
 					<!-- style class to resize sidebar images -->
@@ -63,7 +63,9 @@
 					<img src="sidebarImgs/sidebar2.jpg" alt="sidebar2.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar2">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -71,7 +73,9 @@
 					<img src="sidebarImgs/sidebar3.jpg" alt="sidebar3.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar3">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -79,7 +83,9 @@
 					<img src="sidebarImgs/sidebar4.jpg" alt="sidebar4.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar4">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -87,7 +93,9 @@
 					<img src="sidebarImgs/sidebar5.jpg" alt="sidebar5.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar5">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -95,7 +103,9 @@
 					<img src="sidebarImgs/sidebar6.jpg" alt="sidebar6.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar6">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -103,7 +113,9 @@
 					<img src="sidebarImgs/sidebar7.jpg" alt="sidebar7.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar7">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
@@ -111,7 +123,9 @@
 					<img src="sidebarImgs/sidebar8.jpg" alt="sidebar8.jpg" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
-						<input type="file" name="file"> <br> <input type="submit" value="Submit">
+						<input type="file" name="file">
+						<input type="hidden" name="sBar" value="sidebar8">
+						<br> <input type="submit" value="Submit">
 					</form>
 
 					<br> <br>
