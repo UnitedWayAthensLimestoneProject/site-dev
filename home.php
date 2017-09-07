@@ -29,7 +29,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.html");?>
+<?php include("sidebar.php");?>
 <!-- Main Content -->
 
 				<div id="content"> <!-- css division "content" -->

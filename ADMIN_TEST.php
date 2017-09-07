@@ -27,7 +27,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.html");?>
+<?php include("sidebar.php");?>
 <!-- Main Content -->
 
 				<div id="content"> <!-- css division "content" -->
@@ -50,7 +50,7 @@
 					</style>
 
 					<!-- sidebar1.jpg -->
-					<img src="sidebarImgs/sidebar1.jpg" alt="sidebar1.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar1"); ?> alt="sidebar1" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -60,7 +60,7 @@
 
 					<br> <br>
 					<!-- sidebar2.jpg -->
-					<img src="sidebarImgs/sidebar2.jpg" alt="sidebar2.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar2"); ?> alt="sidebar2" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -70,7 +70,7 @@
 
 					<br> <br>
 					<!-- sidebar3.jpg -->
-					<img src="sidebarImgs/sidebar3.jpg" alt="sidebar3.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar3"); ?> alt="sidebar3" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -80,7 +80,7 @@
 
 					<br> <br>
 					<!-- sidebar4.jpg -->
-					<img src="sidebarImgs/sidebar4.jpg" alt="sidebar4.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar4"); ?> alt="sidebar4" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -90,7 +90,7 @@
 
 					<br> <br>
 					<!-- sidebar5.jpg -->
-					<img src="sidebarImgs/sidebar5.jpg" alt="sidebar5.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar5"); ?> alt="sidebar5" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -100,7 +100,7 @@
 
 					<br> <br>
 					<!-- sidebar6.jpg -->
-					<img src="sidebarImgs/sidebar6.jpg" alt="sidebar6.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar6"); ?> alt="sidebar6" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -110,7 +110,7 @@
 
 					<br> <br>
 					<!-- sidebar7.jpg -->
-					<img src="sidebarImgs/sidebar7.jpg" alt="sidebar7.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar7"); ?> alt="sidebar7" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">
@@ -120,7 +120,7 @@
 
 					<br> <br>
 					<!-- sidebar8.jpg -->
-					<img src="sidebarImgs/sidebar8.jpg" alt="sidebar8.jpg" class="sideImg">
+					<img src=<?php sidebarPath("sidebar8"); ?> alt="sidebar8" class="sideImg">
 
 					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
 						<input type="file" name="file">

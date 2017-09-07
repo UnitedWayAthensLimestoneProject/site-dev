@@ -28,7 +28,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.html");?>
+<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div id="content"> <!-- css division "content" -->
 						<h1>Student United Way</h1> <!-- Header 1 style -->

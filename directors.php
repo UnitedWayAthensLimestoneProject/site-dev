@@ -28,7 +28,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.html");?>
+<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div id="content"> <!-- css division "content" -->
 				<h2>Board of Directors</h2> <!-- Header 2 style -->
