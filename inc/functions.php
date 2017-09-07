@@ -141,14 +141,14 @@ function sidebarPath($name)
 
 	foreach ($filesAry as $file) {
 		if(strpos($file, $name) !== false) {
-			$fpath = "/sidebarImgs/" . $file;
+			$fpath = "sidebarImgs/" . $file;
 			$absPath = $fpath;
 			echo $absPath;
 			return;
 		}
 	}
 
-	echo "/sidebarImgs/dne.jpg";
+	echo "sidebarImgs/dne.jpg";
 }
 
 ?>
