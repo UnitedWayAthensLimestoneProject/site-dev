@@ -112,7 +112,9 @@ echo '<!-- Footer with info and links -->
 		      <a href="volunteer.php">Get Involved</a> <!-- link to Volunteer page -->
 			  <a href="disaster_assistance.php">Disaster Assistance </a> <!-- link to disaster assistance page -->
 		      <a href="donate.php">Donate</a> <!-- link to Donate page -->
-			  <a href="http://www.unitedwayathenslimestone.com/admin/login.php">Admin</a> <!-- link to Admin page -->
+					<!-- For testing purposes, changing address of admin page to local machine -->
+			  <!-- <a href="http://www.unitedwayathenslimestone.com/admin/login.php">Admin</a> <!-- link to Admin page --> -->
+				<a href="admin/login.php">Admin</a>
 		    </p>
 		    <!-- Street Address & link to Google Maps -->
 			<p><a href="https://maps.google.com/maps?q=419+South+Marion+Street,+Athens,+AL&daddr=419+S+Marion+St,+Athens,+AL+35611&hl=en&safe=strict&hnear=419+S+Marion+St,+Athens,+Alabama+35611&t=m&geocode=%3BCRcHfh36VeuXFe3-EgIdy-zQ-im5UdqSaItiiDGYGqDdFVcFPA&z=14" target="_blank"> 419 South Marion Street	 |  Athens, AL 35611</a></p>
