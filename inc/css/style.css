@@ -793,3 +793,19 @@ tr:nth-child(even){background-color: #ffd280}
     margin: 2px;
     text-align: center;
 }
+
+/* Fall 2017 */
+/* ADMIN-TEST page */
+.sideImg
+ {
+	position: relative;
+	float: left;
+	width:  140px;
+	height: 100px;
+	background-position: 50% 50%;
+	background-repeat:   no-repeat;
+	background-size:     cover;
+}
+
+
+

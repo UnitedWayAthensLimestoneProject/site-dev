@@ -34,20 +34,7 @@
 					<h1>Admin Test Page - for editing sidebar content</h1> <!-- Header 1 style -->
           <!-- PUT STUFF HERE -->
 					<p>New uploaded images will overwrite old images</p>
-					<br>
-
-					<!-- style class to resize sidebar images -->
-					<style>
-					.sideImg {
-						position: relative;
-						float: left;
-						width:  140px;
-						height: 100px;
-						background-position: 50% 50%;
-						background-repeat:   no-repeat;
-						background-size:     cover;
-					}
-					</style>
+					<br>					
 
 					<!-- sidebar1.jpg -->
 					<img src=<?php sidebarPath("sidebar1"); ?> alt="sidebar1" class="sideImg">
