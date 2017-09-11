@@ -798,13 +798,40 @@ tr:nth-child(even){background-color: #ffd280}
 /* ADMIN-TEST page */
 .sideImg
  {
-	position: relative;
-	float: left;
-	width:  140px;
-	height: 100px;
-	background-position: 50% 50%;
+	position: relative;	
+	margin-left: 2%;
+	width:  50%;
+	height: 45%;	
 	background-repeat:   no-repeat;
 	background-size:     cover;
+	margin-bottom:2%;
+}
+
+.form-control
+{
+	margin-bottom: 2%;	
+	width: 50%;
+}
+
+.text-box
+{
+margin-left:2%;
+}
+
+.imageHeader
+{
+	margin-left:2%;
+
+}
+
+.imageButtons
+{	
+margin-bottom: 2%;
+margin-left:2%;
+width: 100%;
+display: block;
+/*float: right;*/
+
 }
 
 

@@ -37,82 +37,122 @@
 					<br>					
 
 					<!-- sidebar1.jpg -->
+					<h2 class="imageHeader">Image 1</h2>
 					<img src=<?php sidebarPath("sidebar1"); ?> alt="sidebar1" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar1">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar2.jpg -->
+					<h2 class="imageHeader">Image 2</h2>
 					<img src=<?php sidebarPath("sidebar2"); ?> alt="sidebar2" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar2">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar3.jpg -->
+					<h2 class="imageHeader">Image 3</h2>
 					<img src=<?php sidebarPath("sidebar3"); ?> alt="sidebar3" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar3">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar4.jpg -->
+					<h2 class="imageHeader">Image 4</h2>
 					<img src=<?php sidebarPath("sidebar4"); ?> alt="sidebar4" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar4">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar5.jpg -->
+					<h2 class="imageHeader">Image 5</h2>
 					<img src=<?php sidebarPath("sidebar5"); ?> alt="sidebar5" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar5">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar6.jpg -->
+					<h2 class="imageHeader">Image 6</h2>
 					<img src=<?php sidebarPath("sidebar6"); ?> alt="sidebar6" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar6">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar7.jpg -->
+					<h2 class="imageHeader">Image 7</h2>
 					<img src=<?php sidebarPath("sidebar7"); ?> alt="sidebar7" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar7">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
 					<!-- sidebar8.jpg -->
+					<h2 class="imageHeader">Image 8</h2>
 					<img src=<?php sidebarPath("sidebar8"); ?> alt="sidebar8" class="sideImg">
 
-					<form action="sidebarUpload.php" method="post" enctype="multipart/form-data">
+					<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 						<input type="file" name="file">
 						<input type="hidden" name="sBar" value="sidebar8">
-						<br> <input type="submit" value="Submit">
+						<br> <input type="submit" value="Submit Image">
+					</form>
+					<form action="" method="post" class="text-box">
+					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<input type="submit" value="Submit Text" />
 					</form>
 
 					<br> <br>
