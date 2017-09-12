@@ -1,6 +1,6 @@
 
 <?php
-	require_once("inc/functions.php");	
+	require_once("inc/functions.php");
 ?>
 
 <br>
@@ -20,16 +20,16 @@
 		</div>
 		<div class="spacer heightThirteen"></div> <!-- css division "heightThirteen" for sidebar spacing-->
 		<div id="center spacer"> <!-- css division "heightThirteen" for sidebar divider -->
-		<div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides="li" data-cycle-loop="100" data-index=2> <!-- using Cylce2, slideshow of quotes -->		
+		<div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides="li" data-cycle-loop="100" data-index=2> <!-- using Cylce2, slideshow of quotes -->
 			<ul>
-				<li><p id="text1" class="left"><?php include("textChange1.txt"); ?></p></li>				
-				<li><p id="text2" class="left"><?php include("textChange2.txt"); ?></p></li>				
-				<li><p id="text3" class="left"><?php include("textChange3.txt"); ?></p></li>				
-		   	<li><p id="text4" class="left"><?php include("textChange4.txt"); ?></p></li>				
-		   	<li><p id="text5" class="left"><?php include("textChange5.txt"); ?></p></li>				
-		   	<li><p id="text6" class="left"><?php include("textChange6.txt"); ?></p></li>				
-		   	<li><p id="text7" class="left"><?php include("textChange7.txt"); ?></p></li>				
-		   	<li><p id="text8" class="left"><?php include("textChange8.txt"); ?></p></li>
+				<li><p id="text1" class="left"><?php include("sidebarTxt/textChange1.txt"); ?></p></li>
+				<li><p id="text2" class="left"><?php include("sidebarTxt/textChange2.txt"); ?></p></li>
+				<li><p id="text3" class="left"><?php include("sidebarTxt/textChange3.txt"); ?></p></li>
+		   	<li><p id="text4" class="left"><?php include("sidebarTxt/textChange4.txt"); ?></p></li>
+		   	<li><p id="text5" class="left"><?php include("sidebarTxt/textChange5.txt"); ?></p></li>
+		   	<li><p id="text6" class="left"><?php include("sidebarTxt/textChange6.txt"); ?></p></li>
+		   	<li><p id="text7" class="left"><?php include("sidebarTxt/textChange7.txt"); ?></p></li>
+		   	<li><p id="text8" class="left"><?php include("sidebarTxt/textChange8.txt"); ?></p></li>
 			</ul>
 		</div><br><br>
         </div></div>  <!-- close css division "sidQuote" -->
