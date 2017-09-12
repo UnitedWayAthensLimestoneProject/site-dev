@@ -18,7 +18,7 @@
 	<!-- include Cycle2 http://jquery.malsup.com/cycle2/ -->
 	<script src="inc/js/jquery/jquery.cycle2.ie-fade.min.js"></script>
 	<link href="inc/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
-	<link href="inc/css/style.css" type="text/css" rel="stylesheet">
+	<link href="inc/css/style.css" type="text/css" rel="stylesheet">	
 	<!-- include the css style sheet style.css -->
 
 	</head> <!-- close header -->
@@ -26,14 +26,15 @@
 		<?php get_home_banner() ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
+    <!--Sidebar Code-->
+    <?php include("sidebar.php");?>
+
 <!-- Main Content -->
 
 				<div id="content"> <!-- css division "content" -->
 					<h1>Admin Test Page - for editing sidebar content</h1> <!-- Header 1 style -->
-          <!-- PUT STUFF HERE -->
-					<p>New uploaded images will overwrite old images</p>
+          <!-- PUT STUFF HERE -->					
+					<p><span>New uploaded images will overwrite old images</span></p>
 					<br>					
 
 					<!-- sidebar1.jpg -->
@@ -45,8 +46,8 @@
 						<input type="hidden" name="sBar" value="sidebar1">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText1" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -60,8 +61,8 @@
 						<input type="hidden" name="sBar" value="sidebar2">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText2" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -75,8 +76,8 @@
 						<input type="hidden" name="sBar" value="sidebar3">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText3" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -90,8 +91,8 @@
 						<input type="hidden" name="sBar" value="sidebar4">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText4" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -105,8 +106,8 @@
 						<input type="hidden" name="sBar" value="sidebar5">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText5" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -120,8 +121,8 @@
 						<input type="hidden" name="sBar" value="sidebar6">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText6" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -135,8 +136,8 @@
 						<input type="hidden" name="sBar" value="sidebar7">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText7" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
@@ -150,8 +151,8 @@
 						<input type="hidden" name="sBar" value="sidebar8">
 						<br> <input type="submit" value="Submit Image">
 					</form>
-					<form action="" method="post" class="text-box">
-					<textarea rows="5" class="form-control" placeholder="Enter text here ..."></textarea>
+					<form action="changeText.php" method="post" class="text-box">
+					<input type="text" size="20" class="form-control" name="userText8" />
 					<input type="submit" value="Submit Text" />
 					</form>
 
