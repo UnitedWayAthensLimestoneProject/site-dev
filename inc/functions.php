@@ -21,7 +21,7 @@ function get_main_menu()
 				            <li class='; if($page == "staff.php"){echo '"active"';} echo'><a href="staff.php">Staff</a></li>
 				            <li class='; if($page == "directors.php"){echo '"active"';} echo'><a href="directors.php">Board of Directors</a></li>
 				            <li class='; if($page == "contact.php"){echo '"active"';} echo'><a href="contact.php">Contact Us</a></li>
-										<li class='; if($page == "ADMIN_TEST.PHP"){echo '"active"';} echo'><a href="ADMIN_TEST.PHP">ADMIN TEST</a></li>
+										<li class='; if($page == "ADMIN_TEST.php"){echo '"active"';} echo'><a href="ADMIN_TEST.php">ADMIN TEST</a></li>
 			              </ul>
 			            </li>
 			            <li class="dropdown '; if($page == "calendar.php" || $page == "dayofcaring.php" || $page == "stuffthebus.php" || $page == "retiredrec.php" || $page == "toysfortots.php"){echo 'active';} echo'"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
