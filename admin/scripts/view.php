@@ -1,7 +1,6 @@
-<?php
-
-	require_once 'authorize.php';
-	require_once 'db_connection.php';
+<?php	
+	require_once 'authorize.php';	
+	require_once 'database_connection.php';
 
 	define("SUCCESS_MESSAGE", "success");
 	define("ERROR_MESSAGE", "error");
@@ -30,10 +29,9 @@
 		
 		$count_result = mysql_query($count_sql)
 			or handle_error("an error occurred while searching for volunteers requiring an admin review", mysql_error());
-				
+			
 		$count = mysql_num_rows($count_result);
-		$count_records = $count;
-					
+		$count_records = $count;		
 		display_head($title, $javascript, $count);
 		display_body($bodyId, $title, $success_message, $error_message, $count_records, $count_opp_records, $count_grp_records);
 	}
