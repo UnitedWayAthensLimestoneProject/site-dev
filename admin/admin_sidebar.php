@@ -44,13 +44,17 @@
 
 <div id="admin_form_container">
   <div class="form_description" align="left">
-    <h2>Admin Edit Sidebar Images</h2>
+
 
 
 		<div id="content"> <!-- css division "content" -->
-			<h3>Admin Test Page - for editing sidebar content</h3> <!-- Header 1 style -->
-			<!-- PUT STUFF HERE -->
-			<p><span>New uploaded images will overwrite old images</span></p>
+			<div id="headerText" align="center">
+					<h2>Admin - Edit Sidebar Images</h2>
+					<h3>For editing sidebar content</h3> <!-- Header 1 style -->
+					<!-- PUT STUFF HERE -->
+					<p><span>New uploaded images will overwrite old images</span></p>
+					<p>New modified text will replace old text captions</p>
+		</div> <!-- END headerText -->
 			<br>
 
 			<style>
