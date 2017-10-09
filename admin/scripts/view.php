@@ -1,5 +1,5 @@
-<?php	
-	require_once 'authorize.php';	
+<?php
+	require_once 'authorize.php';
 	require_once 'database_connection.php';
 
 	define("SUCCESS_MESSAGE", "success");
@@ -11,7 +11,7 @@
 	// Displays the html code for <html> through the menu
 	function page_start($title, $javascript = NULL, $bodyId = NULL,
 						$success_message = NULL, $error_message = NULL) {
-		
+
 		$count_records = 0;
 		$count_opp_records = 0;
 		$count_grp_records = 0;
@@ -26,12 +26,12 @@
 					 "SELECT admin_review from damage where admin_review is null or admin_review=0 " .
 					 "UNION ALL " .
 					 "SELECT admin_review from donation where admin_review is null or admin_review=0";
-		
+
 		$count_result = mysql_query($count_sql)
 			or handle_error("an error occurred while searching for volunteers requiring an admin review", mysql_error());
-			
+
 		$count = mysql_num_rows($count_result);
-		$count_records = $count;		
+		$count_records = $count;
 		display_head($title, $javascript, $count);
 		display_body($bodyId, $title, $success_message, $error_message, $count_records, $count_opp_records, $count_grp_records);
 	}
@@ -131,65 +131,65 @@ EOD;
 	}
 
 	function display_message($msg, $msg_type) {
-	
+
 		echo('<script> w2alert("'.$msg.'"); </script>');
-		
+
 		//echo "			<div id='{$msg_type}' class='{$msg_type}'>\n";
 		//echo "				<p>{$msg}</p>\n";
 		//echo "			</div>\n";
 	}
 
 	function admin_menu() {
-	
-	
+
+
 		if (user_in_group($_SESSION['user_id'], "Administrators")) {
 				// continue
 		} else {
 			exit;
 		}
-		
+
 		$count_records = 0;
 		$count_sql = "SELECT vol_id " .
 					 "  FROM volunteers " .
 					 " WHERE admin_review is null or admin_review = 0";
-		
+
 		$count_result = mysql_query($count_sql)
 			or handle_error("an error occurred while searching for volunteers requiring an admin review", mysql_error());
-						
+
 		$count_records = mysql_num_rows($count_result);
-		
+
 		if ($count_records > 0) {
 			$adminReviewsLinkFormat = 'adminReviewsYesLink';
 		} else {
 			$adminReviewsLinkFormat = 'adminReviewsNoLink';
 		}
-		
+
 		$count_grp_records = 0;
 		$count_grp_sql = "SELECT grp_id " .
 					 "  FROM grp_t " .
 					 " WHERE admin_review is null or admin_review = 0";
-		
+
 		$count_grp_result = mysql_query($count_grp_sql)
 			or handle_error("an error occurred while searching for volunteers requiring an admin review", mysql_error());
-						
+
 		$count_grp_records = mysql_num_rows($count_grp_result);
-		
+
 		if ($count_grp_records > 0) {
 			$adminReviewGroupsLinkFormat = 'adminReviewGroupsYesLink';
 		} else {
 			$adminReviewGroupsLinkFormat = 'adminReviewGroupsNoLink';
 		}
-		
+
 		$count_opp_records = 0;
 		$count_opp_sql = "SELECT opp_id " .
 					 "  FROM opportunity " .
 					 " WHERE admin_review is null or admin_review = 0";
-					 
+
 		$count_opp_result = mysql_query($count_opp_sql)
 			or handle_error("an error occurred while searching for opportunities requiring an admin review", mysql_error());
-			
+
 		$count_opp_records = mysql_num_rows($count_opp_result);
-		
+
 		if ($count_opp_records > 0) {
 			$adminReviewOppsLinkFormat = 'adminReviewOppsYesLink';
 		} else {
@@ -200,12 +200,12 @@ EOD;
 		$count_opp_sql = "SELECT disaster_id " .
 					 "FROM disaster " .
 					 "WHERE admin_review is null or admin_review = 0";
-					 
+
 		$count_opp_result = mysql_query($count_opp_sql)
 			or handle_error("an error occurred while searching for disasters requiring an admin review", mysql_error());
-			
+
 		$count_opp_records = mysql_num_rows($count_opp_result);
-		
+
 		if ($count_opp_records > 0) {
 			$adminReviewDisasterLinkFormat = 'adminReviewDisasterYesLink';
 		} else {
@@ -216,12 +216,12 @@ EOD;
 		$count_opp_sql = "SELECT damage_id " .
 					 "FROM damage " .
 					 "WHERE admin_review is null or admin_review = 0";
-					 
+
 		$count_opp_result = mysql_query($count_opp_sql)
 			or handle_error("an error occurred while searching for damages requiring an admin review", mysql_error());
-			
+
 		$count_opp_records = mysql_num_rows($count_opp_result);
-		
+
 		if ($count_opp_records > 0) {
 			$adminReviewDamageLinkFormat = 'adminReviewDamageYesLink';
 		} else {
@@ -232,18 +232,18 @@ EOD;
 		$count_opp_sql = "SELECT donation_id " .
 					 "FROM donation " .
 					 "WHERE admin_review is null or admin_review = 0";
-					 
+
 		$count_opp_result = mysql_query($count_opp_sql)
 			or handle_error("an error occurred while searching for donations requiring an admin review", mysql_error());
-			
+
 		$count_opp_records = mysql_num_rows($count_opp_result);
-		
+
 		if ($count_opp_records > 0) {
 			$adminReviewDonationLinkFormat = 'adminReviewDonationYesLink';
 		} else {
 			$adminReviewDonationLinkFormat = 'adminReviewDonationNoLink';
 		}
-	
+
 		echo <<<EOD
 	<div id="adminWrapper">
 		<div id="adminMenuSidebar">
@@ -277,9 +277,14 @@ EOD;
 				<li><a href="admin_reviews_disaster.php" id="{$adminReviewDisasterLinkFormat}">New Disasters</a></li>
 				<li><a href="admin_reviews_damage.php" id="{$adminReviewDamageLinkFormat}">New Damage</a></li>
 				<li><a href="admin_reviews_donation.php" id="{$adminReviewDonationLinkFormat}">New Donations</a></li>
-			<!-- **ASU2016 Removed the Emails option by request of customer on 6/18/2016 
+			<!-- **ASU2016 Removed the Emails option by request of customer on 6/18/2016
 				<li><a href="admin_emails.php" id="adminEmailsLink">Emails</a></li>
+
+
 			-->
+			<!-- Fall 2017 -->
+				<li><a href="admin_massEmail.php" id="adminMassEmail">Mass Email</a></li>
+				<li><a href="admin_sidebar.php" id="adminSidebar">Sidebar Images</a></li>
 				</ul>
 		</div>
 EOD;

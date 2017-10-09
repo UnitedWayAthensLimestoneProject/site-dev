@@ -1,10 +1,10 @@
 <?php
-	
+
 	require_once 'scripts/database_connection.php';		// provides database connection
-	require_once 'scripts/view.php';					// provides page header and menu	
-	
+	require_once 'scripts/view.php';					// provides page header and menu
+
 	// request error message, null if not.
-	$error_message = $_REQUEST['error_message'];	
+	$error_message = $_REQUEST['error_message'];
 
 	// Start session to enable user authorization and control.
 	session_start();
@@ -34,25 +34,25 @@
 			// Try and log the user in
 			$username = mysql_real_escape_string(trim($_REQUEST['username']));
 			$password = mysql_real_escape_string(trim($_REQUEST['password']));
-			
+
 			// Look up the user
 			$query = sprintf("SELECT user_id, username FROM users " .
 							 " WHERE username = '%s' AND " .
 							 "       password = '%s' AND " .
 							 "		 active = 1;",
-							 $username, $password);
-							 //$username, crypt($password, $username));	// change back for live deployment		
+							 //$username, $password);
+							 $username, crypt($password, $username));	// change back for live deployment
 
-			$results = mysql_query($query);			
+			$results = mysql_query($query);
 
 			// if user is found, assign user_id and username to SESSION variables and
 			// then send to appropriate page.
-			if (mysql_num_rows($results) == 1) { 
+			if (mysql_num_rows($results) == 1) {
 				$result = mysql_fetch_array($results);
 				$user_id = $result['user_id'];
 				$_SESSION['user_id'] = $user_id;
 				$_SESSION['username'] = $username;
-				session_regenerate_id();				
+				session_regenerate_id();
 
 				if (user_in_group($user_id, "Administrators")) {
 					// if user is from an Agency, send to Agency Oppurtunity page.
@@ -66,7 +66,7 @@
 				}
 				exit();
 			} else {
-				// If user not found, issue an error				
+				// If user not found, issue an error
 				$error_message = "Your username/password combination was invalid.";
 			}
 		}
