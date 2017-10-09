@@ -3,7 +3,9 @@
 $filename = $_FILES['file']['name']; //original name of uploaded file
 $tmp_name = $_FILES['file']['tmp_name']; //where file is named/placed temporarily
 $defaultName = $_POST['sBar']; //hidden value
-$dir = "sidebarImgs/";
+//define('ROOT_PATH', dirname(__DIR__) . '/');
+if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__) . '/');
+$dir = ROOT_PATH.'sidebarImgs/';
 $filesAry = scandir($dir); //used to delete old file
 $randNum = mt_rand(1000,9999); //generates 4 digit random number
 $randNumString = strval($randNum); //4 digit random string
@@ -23,13 +25,13 @@ if (isset($filename)){
       //delete old file
       foreach ($filesAry as $file) {
         if(strpos($file, $defaultName) !== false) {
-          $absPath = "/sidebarImgs/" . $file;
-          unlink (__DIR__ . $absPath);
+          $absPath = ROOT_PATH.'sidebarImgs/' . $file;
+          unlink ($absPath);
         }
       }
 
       //put new file with appended random numbers to name into sidebarImgs dir
-      $location = 'sidebarImgs/';
+      $location = ROOT_PATH.'sidebarImgs/';
       if(move_uploaded_file($tmp_name, $location.$newName)) {
         echo 'File uploaded successfully';
       }
@@ -44,4 +46,4 @@ if (isset($filename)){
 ?>
 
 <br>
-<a href="ADMIN_TEST.php">Back to Admin Page</a>
+<a href="admin_sidebar.php">Back to Admin Page</a>

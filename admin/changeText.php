@@ -2,45 +2,47 @@
 -->
 
 <?php
+if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__) . '/');
+
 if (isset($_POST['userText1']))
 {
 	$textChange = $_POST['userText1'];
-	$textFile = "sidebarTxt/textChange1.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange1.txt";
 }
 else if(isset($_POST['userText2']))
 {
 	$textChange = $_POST['userText2'];
-	$textFile = "sidebarTxt/textChange2.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange2.txt";
 }
 else if(isset($_POST['userText3']))
 {
 	$textChange = $_POST['userText3'];
-	$textFile = "sidebarTxt/textChange3.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange3.txt";
 }
 else if(isset($_POST['userText4']))
 {
 	$textChange = $_POST['userText4'];
-	$textFile = "sidebarTxt/textChange4.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange4.txt";
 }
 else if(isset($_POST['userText5']))
 {
 	$textChange = $_POST['userText5'];
-	$textFile = "sidebarTxt/textChange5.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange5.txt";
 }
 else if(isset($_POST['userText6']))
 {
 	$textChange = $_POST['userText6'];
-	$textFile = "sidebarTxt/textChange6.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange6.txt";
 }
 else if(isset($_POST['userText7']))
 {
 	$textChange = $_POST['userText7'];
-	$textFile = "sidebarTxt/textChange7.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange7.txt";
 }
 else if(isset($_POST['userText8']))
 {
 	$textChange = $_POST['userText8'];
-	$textFile = "sidebarTxt/textChange8.txt";
+	$textFile = ROOT_PATH."sidebarTxt/textChange8.txt";
 }
 else
 {
@@ -55,4 +57,4 @@ echo 'Text changed successfully';
 ?>
 
 <br>
-<a href="ADMIN_TEST.php">Back to Admin Page</a>
+<a href="admin_sidebar.php">Back to Admin Page</a>

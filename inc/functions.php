@@ -21,7 +21,6 @@ function get_main_menu()
 				            <li class='; if($page == "staff.php"){echo '"active"';} echo'><a href="staff.php">Staff</a></li>
 				            <li class='; if($page == "directors.php"){echo '"active"';} echo'><a href="directors.php">Board of Directors</a></li>
 				            <li class='; if($page == "contact.php"){echo '"active"';} echo'><a href="contact.php">Contact Us</a></li>
-										<li class='; if($page == "ADMIN_TEST.php"){echo '"active"';} echo'><a href="ADMIN_TEST.php">ADMIN TEST</a></li>
 										<li class='; if($page == "ADMIN_VOLUNTEERS.php"){echo '"active"';} echo'><a href="ADMIN_VOLUNTEERS.php">ADMIN VOLUNTEERS</a></li>
 									</ul>
 								</li>
@@ -139,19 +138,20 @@ return;
 //returns name of file if found, returns dne.jpg if not found
 function sidebarPath($name)
 {
-	$dir = "sidebarImgs/";
+	//define('ROOT_PATH', dirname(__DIR__) . '/');
+	if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__) . '/');
+	$dir = ROOT_PATH.'sidebarImgs';
 	$filesAry = scandir($dir);
 
 	foreach ($filesAry as $file) {
 		if(strpos($file, $name) !== false) {
-			$fpath = "sidebarImgs/" . $file;
-			$absPath = $fpath;
-			echo $absPath;
+			$fpath = '/sidebarImgs/' . $file;
+			echo $fpath;
 			return;
 		}
 	}
 
-	echo "sidebarImgs/dne.jpg";
+	echo "/sidebarImgs/dne.jpg";
 }
 
 ?>
