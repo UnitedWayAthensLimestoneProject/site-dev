@@ -1,3 +1,20 @@
+<style>
+.search {
+  padding:8px 15px;
+  background:rgba(30, 30, 20, 0.2);
+  border:0px solid #dbdbdb;
+
+.button {
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+}
+
+</style>
+
 <?php
 
 
@@ -66,6 +83,14 @@ function get_main_menu()
 		              		<li><a  style="background-color:#f57814" href="donate.php">DONATE</a></li>
 			              </ul>
 			            </li>
+									<!-- Searchbar code -->
+									<li style="position:absolute;right:20px;">
+										<form action="https://google.com/search" method="get">
+										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
+										<input type="text" name="q" />
+										<input type="submit" name="sa" value="Search" class="button" />
+										</form>
+									</li>
 
 
 
@@ -74,8 +99,6 @@ function get_main_menu()
 				    <!-- /.navbar-collapse -->
 			      </div>
 				  <!-- /.container-fluid -->
-
-
 
 			  </nav>
 ';
