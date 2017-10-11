@@ -38,6 +38,7 @@ function get_main_menu()
 				            <li><a href="https://www.facebook.com/United-Way-Athens-Limestone-131401963542374/?ref=ts" target = "_blank">Facebook</a></li>
 				            <li><a href="https://twitter.com/uwlimestone" target = "_blank">Twitter</a></li>
 										<li><a href="https://www.instagram.com/unitedwayalc/" target = "_blank">Instagram</a></li>
+										<li><a href="https://www.youtube.com/channel/UCXHE9e7AyeOJmiWXnV5zzSQ/featured" target = "_blank">YouTube</a></li>
 							<li class='; if($page == "media.php"){echo '"active"';} echo'><a href="media.php">Videos</a></li>
 			              </ul>
 			            </li>

@@ -41,7 +41,7 @@
 
 <div id="admin_form_container">
   <div class="form_description" align="center">
-    <h2>Admin Mass Email</h2>
+    <h2>Admin - Mass Email to Volunteers</h2>
     <p></p>
   </div>
 
