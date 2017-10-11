@@ -48,13 +48,19 @@
 <?php
 
 function printStuff($array) {
+	$emailString = "";
 	foreach( $array as $stuff ) {
 	    if( is_array( $stuff ) ) {
 	        foreach( $stuff as $thing ) {
-	            echo $thing . ", ";
+	            if ($thing != '')
+								$emailString .= $thing . ", ";
 	        }
+					//removes last comma and space
+					$emailString = substr($emailString, 0, -1);
+					$emailString = substr($emailString, 0, -1);
+					echo $emailString;
 	    } else {
-	        echo $stuff;
+	        echo "Error....";
 	    }
 	}
 }
@@ -69,22 +75,50 @@ mysql_select_db(DATABASE_NAME)
 
 	//--------------------------------------
 
-echo "Results: <br><br>";
-printStuff($_POST);
-echo "<br> ";
-echo "<br> ";
+?>
+
+<style>
+	.scroll {
+		position:relative;
+		margin-left:3%;
+    width: 94%;
+    height: 700px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+}
+
+	.resizedTextbox
+		{position:relative;
+    width:94%;
+		margin-left:3%;
+		height:30px;}
+
+	.tb {
+	 border-collapse: collapse;
+	 border: 1px solid;
+	}
+</style>
+
+<p style='margin-left:10px'>Results:</p> <br>
+<input type="text" value="<?php printStuff($_POST); ?>" class="resizedTextbox"/>
+<br><br>
+
+<?php
 
 $query = "SELECT * FROM volunteers ORDER BY last_name ASC";
 $result = mysql_query($query);
 
+echo "<div class='scroll'>";
 echo "<form action='' method='post'>";
-echo "<table border='1'>";
+echo "<table border='1' class='tb'>";
 echo "<tr><td></td><td>First Name</td><td>Last Name</td><td>Email Address</td><td>Home Phone</td><td>Cell Phone</td><tr>";
 while ($row = mysql_fetch_assoc($result)) {
-	echo "<tr><td><input type='checkbox' name='selected[]' value='{$row['email_address']}'/></td><td>{$row['first_name']}</td><td>{$row['last_name']}</td><td>{$row['email_address']}</td><td>{$row['home_phone']}</td><td>{$row['cell_phone']}</td><tr>";
+	echo "<tr class='tb'><td><input type='checkbox' name='selected[]' value='{$row['email_address']}' style='width:17px;height:17px'/></td><td>{$row['first_name']}</td><td>{$row['last_name']}</td><td>{$row['email_address']}</td><td>{$row['home_phone']}</td><td>{$row['cell_phone']}</td><tr>";
 }
 echo "</table>";
-echo "<input type='submit'/>";
+echo "</div>"; //end scroll class
+echo "<br>";
+echo "<input style='margin-left:10px' type='submit'/>";
 echo "</form>";
 
 mysql_free_result($result);
