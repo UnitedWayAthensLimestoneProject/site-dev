@@ -82,7 +82,7 @@ mysql_select_db(DATABASE_NAME)
 		position:relative;
 		margin-left:3%;
     width: 94%;
-    height: 700px;
+    height: 550px;
 		overflow-y: scroll;
 		overflow-x: hidden;
 }

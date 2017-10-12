@@ -3,11 +3,29 @@
 	require_once("inc/functions.php");
 ?>
 
+<style>
+.search {
+	float:right;
+	position:relative;
+	background: none;
+}
+</style>
+
+
+<!-- Searchbar code position:absolute;right:20px; -->
+	<form class="search" action="https://google.com/search" method="get">
+	<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
+	<input type="text" name="q" />
+	<input type="submit" name="sa" value="Search" class="button" />
+	</form>
+	<br>
+	<br>
+
 <br>
-<div id="wrapper2"> <!-- css division "wrapper2" -->
+<div id="wrapper2" top="0" left="0"> <!-- css division "wrapper2" -->
 	<div id = "sideQuote"><br><br> <!-- css division "sidQuote" -->
               <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides="li" data-cycle-random="false" data-cycle-loop="100" data-index=1> <!-- using Cylce2, slideshow of photos -->
-		   <ul>
+			 <ul>
 				<li><img src=<?php sidebarPath("sidebar1"); ?> alt='sidebar1'></li>
 				<li><img src=<?php sidebarPath("sidebar2"); ?> alt='sidebar2'></li>
 				<li><img src=<?php sidebarPath("sidebar3"); ?> alt='sidebar3'></li>
