@@ -1,11 +1,11 @@
 <?php
     define("__ROOT__", dirname(dirname(__FILE__)));
-	require_once("inc/functions.php");
+	  require_once("inc/functions.php");
     require_once("scripts/database_connection.php");
 
-	$query = "SELECT * FROM calendar ";
-	$query .= "ORDER BY date DESC";
-	$event_set = mysqli_query($connection, $query);
+	$query = "SELECT * FROM calendar ORDER BY date DESC";
+  $event_set = mysql_query($query);
+	//$event_set = mysqli_query($connection, $query);
 
 
 ?>
@@ -41,9 +41,14 @@
 
 								 <?php
 
-							if (mysqli_num_rows($event_set) > 0)
+                 //debug
+                 $db = mysql_num_rows($event_set);
+                 if (is_null($db))
+                  echo "null";
+
+							if (mysql_num_rows($event_set) > 0)
 							{
-								while ($row = mysqli_fetch_assoc($event_set))
+								while ($row = mysql_fetch_assoc($event_set))
 								{ ?>  <!-- Run this code while the number of events is greater than 0 -->
 
 						          <table>
@@ -64,7 +69,7 @@
 
 								</table>
 
-								<?php 
+								<?php
 								}
 							}
 

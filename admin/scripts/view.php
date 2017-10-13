@@ -285,6 +285,7 @@ EOD;
 			<!-- Fall 2017 -->
 				<li><a href="admin_massEmail.php" id="adminMassEmail">Mass Email</a></li>
 				<li><a href="admin_sidebar.php" id="adminSidebar">Sidebar Images</a></li>
+				<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
 				</ul>
 		</div>
 EOD;
