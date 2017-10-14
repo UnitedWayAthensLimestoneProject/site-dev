@@ -27,6 +27,25 @@
 		<body>
 		<?php get_home_banner() ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
+
+		<!-- Searchbar style -->
+		<style>
+		.search {
+			float:right;
+			position:relative;
+			background: none;
+		}
+		</style>
+
+
+		<!-- Searchbar code position:absolute;right:20px; -->
+			<form class="search" action="https://google.com/search" method="get">
+			<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
+			<input type="text" name="q" />
+			<input type="submit" name="sa" value="Search" class="button" />
+			</form>
+			<br>
+			<br>
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
