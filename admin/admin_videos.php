@@ -38,24 +38,6 @@
 
    admin_menu();
 
-   $query = "SELECT * FROM vids";
-   $result = mysql_query($query) or die(mysql_error());
-
-   //not working yet..........
-   $titles = array();
-   $urls = array();
-   $desc = array();
-
-   //check if any results get returned
-   if (mysql_fetch_assoc($result) > 0) {
-     while ($row = mysql_fetch_assoc($result)) {
-       $temp = $row['title'];
-       array_push($titles, $row['title']);
-       array_push($urls, $row['youtubeURL']);
-       array_push($desc, $row['description']);
-     }
-   }
-
 ?>
 
 <div id="admin_form_container">
@@ -66,14 +48,154 @@
 
 <!-- stuff goes here -->
 
-<h4>Video 1</h4>
-<form action="" method="post">
-<input type="text" size="20" name="userText1" value="Title"/>
-<input type="text" size="20" name="userText1" value="YouTube URL"/>
-<input type="text" size="20" name="userText1" value="Description"/>
-<input type="submit" value="Submit Text" />
-</form>
+<?php
 
+$query = "SELECT * FROM vids";
+$result = mysql_query($query) or die(mysql_error());
+
+$titles = array();
+$urls = array();
+$desc = array();
+
+while ($row = mysql_fetch_assoc($result)) {
+	array_push($titles, $row["title"]);
+	array_push($urls, $row["youtubeURL"]);
+	array_push($desc, $row["description"]);
+}
+
+//after coming back from vidToDB.php
+//this displays notification to users
+if (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'data_saved') {
+    echo "Successfully updated video.\n";
+		unset( $_SESSION['note']);
+}
+elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
+	echo "Error: unable to update video.\n";
+	unset( $_SESSION['note']);
+}
+
+?>
+
+<br>
+<pre>Video Title            Youtube URL               Description</pre>
+<br>
+
+<h4>Video 1</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[0]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[0]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[0]; ?>"/>
+<input type="hidden" name="objId" value="1">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 2</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[1]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[1]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[1]; ?>"/>
+<input type="hidden" name="objId" value="2">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 3</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[2]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[2]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[2]; ?>"/>
+<input type="hidden" name="objId" value="3">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 4</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[3]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[3]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[3]; ?>"/>
+<input type="hidden" name="objId" value="4">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 5</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[4]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[4]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[4]; ?>"/>
+<input type="hidden" name="objId" value="5">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 6</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[5]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[5]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[5]; ?>"/>
+<input type="hidden" name="objId" value="6">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 7</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[6]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[6]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[6]; ?>"/>
+<input type="hidden" name="objId" value="7">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 8</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[7]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[7]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[7]; ?>"/>
+<input type="hidden" name="objId" value="8">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 9</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[8]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[8]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[8]; ?>"/>
+<input type="hidden" name="objId" value="9">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<h4>Video 10</h4>
+<form action="vidToDB.php" method="post">
+<input type="text" size="17" name="title" value="<?php echo $titles[9]; ?>"/>
+<input type="text" size="17" name="url" value="<?php echo $urls[9]; ?>"/>
+<input type="text" size="17" name="desc" value="<?php echo $desc[9]; ?>"/>
+<input type="hidden" name="objId" value="10">
+<input type="submit" value="Submit"/>
+</form>
+<br>
+
+<p>Instructions:</p>
+<p>In order to copy the correct YouTube link:</p>
+<p>1) Underneath the YouTube video, click the SHARE button</p>
+<p>2) Next, click the EMBED button</p>
+<p>3) Copy all of the text given from the text area</p>
+<p>4) Paste that text into the appropriate textbox above</p>
+<br>
+<p>Refer to images below for reference:</p>
+<br>
+
+<img src="videoInstructionsPics/instruct1.PNG" alt="Instruction 1">
+<br>
+<br>
+<img src="videoInstructionsPics/instruct2.PNG" alt="Instruction 2">
+
+<!-- End content -->
 
 <div id="editvoltable"></div>
 
