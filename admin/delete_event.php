@@ -44,7 +44,7 @@
 		$query = "DELETE FROM calendar ";
 		$query .= "WHERE id = {$id} ";
 		$query .= "LIMIT 1";
-		$result = mysqli_query($connection, $query);
+		$result = mysql_query($query);
 		
 		redirect_to("view_event.php"); 
 		
@@ -63,14 +63,14 @@
 	{
 		global $connection;
 		
-		$safe_event_id = mysqli_real_escape_string($connection, $event_id);
+		$safe_event_id = mysql_real_escape_string($event_id);
 		
 		$query = "SELECT * ";
 		$query .= "FROM calendar ";
 		$query .= "WHERE id = {$safe_event_id} ";
 		$query .= "LIMIT 1";
-		$event_set = mysqli_query($connection, $query);
-		if ($eventret= mysqli_fetch_assoc($event_set))
+		$event_set = mysql_query($query);
+		if ($eventret= mysql_fetch_assoc($event_set))
 		{
 			return $eventret;
 		}

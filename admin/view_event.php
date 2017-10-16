@@ -33,6 +33,21 @@
 	// Current user groups are Administrators, emails, and Agencies
 	// authorize_user(); will allow anyone that is logged in to access the page
 	authorize_user(array("Administrators"));
+	
+		//Query Database for any current entries
+	
+	$query = "SELECT * FROM calendar ";
+	$query .= "ORDER BY date DESC";
+	$event_set = mysql_query($query);
+
+	
+	function mysql_prep($string)
+	{
+		global $connection;
+		
+		$escaped_string = mysql_real_escape_string($connection, $string);
+		return $escaped_string;
+	}
 
 	page_start("United Way of Athens/Limestone County EMD Admin Page", NULL, "viewEvent",
 			   $_REQUEST['success_message'], $_REQUEST['error_message']);
@@ -59,25 +74,7 @@
 				<h2>Event Administration</h2>
 				<p>Allows Administrators to view current events.</p>
 			</div>
-			
-<?php
-			//Query Database for any current entries
-	
-	$query = "SELECT * FROM calendar ";
-	$query .= "ORDER BY date DESC";
-	$event_set = mysql_query($query);
-
-	
-	function mysql_prep($string)
-	{
-		global $connection;
-		
-		$escaped_string = mysqli_real_escape_string($connection, $string);
-		return $escaped_string;
-	}
-?>
-			
-			
+		<div id="eventTable"></div>				
 			
 			<?php
 							$event_set;

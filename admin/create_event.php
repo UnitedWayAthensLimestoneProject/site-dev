@@ -51,7 +51,7 @@
 		$query = "INSERT INTO calendar (date, time, event, location) VALUES (";
 		$query .= " '{$datedb}', '{$timedb}', '{$eventdb}', '{$locationdb}' ";
 		$query .= ")";
-		$result= mysqli_query($connection,$query);
+		$result= mysql_query($query);
 	
 		
 		redirect_to("view_event.php"); 
@@ -73,7 +73,7 @@
 	{
 		global $connection;
 		
-		$escaped_string = mysqli_real_escape_string($connection, $string);
+		$escaped_string = mysql_real_escape_string($string);
 		return $escaped_string;
 	}
 
@@ -83,14 +83,14 @@
 	{
 		global $connection;
 		
-		$safe_event_id = mysqli_real_escape_string($connection, $event_id);
+		$safe_event_id = mysql_real_escape_string($event_id);
 		
 		$query = "SELECT * ";
 		$query .= "FROM calendar ";
 		$query .= "WHERE id = {$safe_event_id} ";
 		$query .= "LIMIT 1";
-		$event_set = mysqli_query($connection, $query);
-		if ($eventret= mysqli_fetch_assoc($event_set))
+		$event_set = mysql_query($query);
+		if ($eventret= mysql_fetch_assoc($event_set))
 		{
 			return $eventret;
 		}
@@ -119,7 +119,7 @@
 
 
 
-<div class="admin_form_container">
+<div id="admin_form_container">
 
 	<div class="form_description" align="center">
 				<h2>Event Administration</h2>
@@ -130,9 +130,9 @@
 			
 	<form action = "create_event.php" method= "post">
 				
-		<input type="date" name = "date" required>
+		<input type="date" name = "date" placeholder = "Date" required>
 		
-		<input type="time" name = "time" required>
+		<input type="time" name = "time" placeholder = "Time" required>
 		
  		<input type = "text" name = "event" placeholder = "Event Name"  maxlength="250" required>
  			

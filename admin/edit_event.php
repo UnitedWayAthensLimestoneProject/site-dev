@@ -56,7 +56,7 @@
 		$query .= "location = '{$locationdb}' ";
 		$query .= "WHERE id = {$id} ";
 		$query .= "LIMIT 1";
-		$result = mysqli_query($connection, $query);
+		$result = mysql_query($query);
 	
 		
 		redirect_to("view_event.php"); 
@@ -78,7 +78,7 @@
 	{
 		global $connection;
 		
-		$escaped_string = mysqli_real_escape_string($connection, $string);
+		$escaped_string = mysql_real_escape_string($string);
 		return $escaped_string;
 	}
 
@@ -88,14 +88,14 @@
 	{
 		global $connection;
 		
-		$safe_event_id = mysqli_real_escape_string($connection, $event_id);
+		$safe_event_id = mysql_real_escape_string($event_id);
 		
 		$query = "SELECT * ";
 		$query .= "FROM calendar ";
 		$query .= "WHERE id = {$safe_event_id} ";
 		$query .= "LIMIT 1";
-		$event_set = mysqli_query($connection, $query);
-		if ($eventret= mysqli_fetch_assoc($event_set))
+		$event_set = mysql_query($query);
+		if ($eventret = mysql_fetch_assoc($event_set))
 		{
 			return $eventret;
 		}
@@ -126,7 +126,7 @@
 
 
 
-<div class="admin_form_container">
+<div id="admin_form_container">
 
 	<div class="form_description" align="center">
 				<h2>Event Administration</h2>
@@ -137,13 +137,13 @@
 			
 	<form action = "edit_event.php?id=<?php echo urlencode($eventID["id"]); ?>" method= "post">
 				
-		<input type = "date" name = "date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required>
+		<input type = "date" name = "date" placeholder="Date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required>
 		
-		<input type = "time" name = "time" value="<?php echo htmlspecialchars($eventID["time"]); ?>"required>
+		<input type = "time" name = "time" placeholder="Time" value="<?php echo htmlspecialchars($eventID["time"]); ?>"required>
 		
- 		<input type = "text" name = "event" value="<?php echo htmlspecialchars($eventID["event"]); ?>"  maxlength="100" required>
+ 		<input type = "text" name = "event" placeholder="Event" value="<?php echo htmlspecialchars($eventID["event"]); ?>"  maxlength="100" required>
  			
-		<input type = "text" name = "location" value="<?php echo htmlspecialchars($eventID["location"]); ?>" maxlength="150" required><br><br>
+		<input type = "text" name = "location" placeholder="Location" value="<?php echo htmlspecialchars($eventID["location"]); ?>" maxlength="150" required><br><br>
  						
  		<input type="submit" name = "submit" value = "Update"> 				
 	</form>
