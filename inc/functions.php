@@ -80,10 +80,18 @@ function get_main_menu()
 				            <li class='; if($page == "disaster_relief.php"){echo '"active"';} echo'><a href="disaster_relief.php">Disaster Relief Form</a></li>
 				            <li class='; if($page == "disaster_volunteer.php"){echo '"active"';} echo'><a href="disaster_volunteer.php">Disaster Volunteer Registration</a></li>
 							<li class='; if($page == "damage_report.php"){echo '"active"';} echo'><a href="damage_report.php">Damage Report Form</a></li>
-		              		<li><a  style="background-color:#f57814" href="donate.php">DONATE</a></li>
+		              		<li><a style="background-color:#f57814" href="donate.php">DONATE</a></li>
 			              </ul>
-			            </li>
-
+			            </li>									
+									</li>									
+									<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<form style="background:none" class="search"  action="https://google.com/search" method="get">
+										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
+										<input type="text" name="q" placeholder="Search..." />										
+										</form>
+									</ul>
+									</li>									
 			          </ul>
 			        </div>
 				    <!-- /.navbar-collapse -->
