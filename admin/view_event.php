@@ -34,30 +34,10 @@
 	// authorize_user(); will allow anyone that is logged in to access the page
 	authorize_user(array("Administrators"));
 
-
-	//Query Database for any current entries
-	
-	$query = "SELECT * FROM calendar ";
-	$query .= "ORDER BY date DESC";
-	$event_set = mysqli_query($connection, $query);
-
-
-	
-	function mysql_prep($string)
-	{
-		global $connection;
-		
-		$escaped_string = mysqli_real_escape_string($connection, $string);
-		return $escaped_string;
-	}
-
-
 	page_start("United Way of Athens/Limestone County EMD Admin Page", NULL, "viewEvent",
 			   $_REQUEST['success_message'], $_REQUEST['error_message']);
 
 	admin_menu();
-	
-
 
 ?>
 
@@ -73,21 +53,38 @@
 
 
 
-<div class="admin_form_container">
+<div id="admin_form_container">
 
 	<div class="form_description" align="center">
 				<h2>Event Administration</h2>
 				<p>Allows Administrators to view current events.</p>
-			</div>	
+			</div>
 			
-			<div id="eventTable"></div>
+<?php
+			//Query Database for any current entries
+	
+	$query = "SELECT * FROM calendar ";
+	$query .= "ORDER BY date DESC";
+	$event_set = mysql_query($query);
+
+	
+	function mysql_prep($string)
+	{
+		global $connection;
+		
+		$escaped_string = mysqli_real_escape_string($connection, $string);
+		return $escaped_string;
+	}
+?>
+			
+			
 			
 			<?php
 							$event_set;
-							if (mysqli_num_rows($event_set) > 0)	
+							if (mysql_num_rows($event_set) > 0)	
 							{ 
 					
-								while ($row = mysqli_fetch_assoc($event_set))
+								while ($row = mysql_fetch_assoc($event_set))
 								{ ?>  <!-- Run this code while the number of events is greater than 0 -->
 
 						          <table>
