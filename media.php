@@ -36,6 +36,21 @@
 
 							<?php
 
+							function convertURL($origURL) {
+								if ($origURL == '') {
+									return '';
+								}
+								if (strpos($origURL, 'www.youtube.com') == false) {
+									return '';
+								}
+								preg_match('/[\\?\\&]v=([^\\?\\&]+)/', $origURL, $matches);
+								$id = $matches[1];
+								$first = '<iframe width="580" height="385" src="https://www.youtube.com/embed/';
+								$last = '" frameborder="0" allowfullscreen></iframe>';
+								$embeded = $first . $id . $last;
+								return $embeded;
+							}
+
 							$query = "SELECT * FROM vids";
 							$result = mysql_query($query) or die(mysql_error());
 
@@ -45,7 +60,7 @@
 
 							while ($row = mysql_fetch_assoc($result)) {
 								array_push($titles, $row["title"]);
-								array_push($urls, $row["youtubeURL"]);
+								array_push($urls, convertURL($row["youtubeURL"]));
 								array_push($desc, $row["description"]);
 							}
 
@@ -61,8 +76,6 @@
 							}
 
 							?>
-
-
 
 
 					<hr> <!-- horizontal bar -->

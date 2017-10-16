@@ -77,7 +77,7 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
 ?>
 
 <br>
-<pre>Video Title            Youtube URL               Description</pre>
+<pre>Video Title            Youtube URL            Description</pre>
 <br>
 
 <h4>Video 1</h4>
@@ -179,21 +179,6 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
 <input type="submit" value="Submit"/>
 </form>
 <br>
-
-<p>Instructions:</p>
-<p>In order to copy the correct YouTube link:</p>
-<p>1) Underneath the YouTube video, click the SHARE button</p>
-<p>2) Next, click the EMBED button</p>
-<p>3) Copy all of the text given from the text area</p>
-<p>4) Paste that text into the appropriate textbox above</p>
-<br>
-<p>Refer to images below for reference:</p>
-<br>
-
-<img src="videoInstructionsPics/instruct1.PNG" alt="Instruction 1">
-<br>
-<br>
-<img src="videoInstructionsPics/instruct2.PNG" alt="Instruction 2">
 
 <!-- End content -->
 
