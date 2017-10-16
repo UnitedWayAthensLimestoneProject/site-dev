@@ -40,7 +40,7 @@
 				E-mail: <a href="mailto:unitedway44@unitedwayalc.com?" title="unitedway44@unitedwayalc.com">unitedway44@unitedwayalc.com</a><br>
 				<!-- Phone number with link to call from a smartphone  -->
 				Phone: <a href="tel:2562332323, 11">256-233-2323 ext: 11</a><br/>
-				<hr> <!-- horizontal bar -->
+				<hr class="barClass"> <!-- horizontal bar -->
 
 				<h2>Diane Craig</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
@@ -51,7 +51,7 @@
 				E-mail: <a href="mailto:diannecraig@unitedwayalc.com?" title="diannecraig@unitedwayalc.com">diannecraig@unitedwayalc.com</a><br>
 				<!-- Phone number with link to call from a smartphone  -->
 				Phone: <a href="tel:2562332323, 10">256-233-2323 ext: 10</a><br/>
-				<hr> <!-- horizontal bar -->
+				<hr class="barClass"> <!-- horizontal bar -->
 
 				<h2>Shelley Jones</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
@@ -62,7 +62,7 @@
 				E-mail: <a href="mailto:shelleyjones@unitedwayalc.com?" title="shelleyjones@unitedwayalc.com">shelleyjones@unitedwayalc.com</a><br>
 				<!-- Phone number with link to call from a smartphone  -->
 				Phone: <a href="tel:2562332323, 15">256-233-2323 ext: 15</a><br/>
-				<hr> <!-- horizontal bar -->
+				<hr class="barClass"> <!-- horizontal bar -->
 
 				</div> <!-- close css division "content" -->
 			</div>  <!-- close css division "wrapper2" -->

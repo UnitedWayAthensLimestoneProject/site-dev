@@ -834,5 +834,14 @@ display: block;
 
 }
 
+.searchMe {
+  padding:8px 15px;
+	background: none;
+  border:0px solid #dbdbdb;
+	color: black;
+}
 
-
+.barClass {
+	margin-left: 0;
+	width: 70%;
+	}

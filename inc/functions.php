@@ -1,20 +1,3 @@
-<style>
-.search {
-  padding:8px 15px;
-  background:rgba(30, 30, 20, 0.2);
-  border:0px solid #dbdbdb;
-
-.button {
-  position:relative;
-  padding:6px 15px;
-  left:-8px;
-  border:2px solid #207cca;
-  background-color:#207cca;
-  color:#fafafa;
-}
-
-</style>
-
 <?php
 
 
@@ -59,7 +42,7 @@ function get_main_menu()
 							<li class='; if($page == "media.php"){echo '"active"';} echo'><a href="media.php">Videos</a></li>
 			              </ul>
 			            </li>
-			            <li class="dropdown '; if($page == "students.php" || $page == "athens.php" || $page == "calhoun.php"){echo 'active';} echo'"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student United Way<span class="caret"></span></a>
+			            <li class="dropdown '; if($page == "students.php" || $page == "athens.php" || $page == "calhoun.php"){echo 'active';} echo'"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students<span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li class='; if($page == "students.php"){echo '"active"';} echo'><a href="students.php">Student Home</a></li>
 				            <li class='; if($page == "athens.php"){echo '"active"';} echo'><a href="athens.php">Athens State</a></li>
@@ -82,16 +65,20 @@ function get_main_menu()
 							<li class='; if($page == "damage_report.php"){echo '"active"';} echo'><a href="damage_report.php">Damage Report Form</a></li>
 		              		<li><a style="background-color:#f57814" href="donate.php">DONATE</a></li>
 			              </ul>
-			            </li>									
-									</li>									
-									<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
+			            </li>
+										<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<form style="background:none" class="search"  action="https://google.com/search" method="get">
+										<form class="searchMe"  action="https://google.com/search" method="get">
 										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
 										<input type="text" name="q" placeholder="Search..." />										
 										</form>
 									</ul>
+									</li>		
+
+
+									
 									</li>									
+																
 			          </ul>
 			        </div>
 				    <!-- /.navbar-collapse -->
@@ -128,13 +115,13 @@ echo '<!-- Footer with info and links -->
 		      <a href="mission.php">About</a> <!-- link to Mission page -->
 		      <a href="calendar.php">Events</a> <!-- link to Events page -->
 		      <a href="partners.php">Partners</a> <!-- link to Partners page -->
-		      <a href="students.php">Student United Way</a> <!-- link to Student page -->
+		      <a href="students.php">Students</a> <!-- link to Student page -->
 		      <a href="media.php">Media</a> <!-- link to Media page -->
 		      <a href="volunteer.php">Get Involved</a> <!-- link to Volunteer page -->
 			  <a href="disaster_assistance.php">Disaster Assistance </a> <!-- link to disaster assistance page -->
 		      <a href="donate.php">Donate</a> <!-- link to Donate page -->
 					<!-- For testing purposes, changing address of admin page to local machine -->
-			  <!-- <a href="http://www.unitedwayathenslimestone.com/admin/login.php">Admin</a> <!-- link to Admin page --> -->
+			  <!-- <a href="http://www.unitedwayathenslimestone.com/admin/login.php">Admin</a> <!-- link to Admin page -->
 				<a href="admin/login.php">Admin</a>
 		    </p>
 		    <!-- Street Address & link to Google Maps -->
