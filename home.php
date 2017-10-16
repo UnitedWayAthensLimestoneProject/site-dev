@@ -32,7 +32,7 @@
 <?php include("sidebar.php");?>
 <!-- Main Content -->
 
-				<div id="content"> <!-- css division "content" -->
+				<div class="content""> <!-- css division "content" -->
 					<h1>United Way of Athens-Limestone County</h1> <!-- Header 1 style -->
 					<!-- paragraph -->
 			          <p>Welcome to the United Way Athens-Limestone County! United Way is a non-profit organization throughout

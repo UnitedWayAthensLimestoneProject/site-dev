@@ -47,7 +47,7 @@
 
 
 
-		<div id="content"> <!-- css division "content" -->
+		<div class="content"> <!-- css division "content" -->
 			<div id="headerText" align="center">
 					<h2>Admin - Edit Sidebar Images</h2>
 					<h3>For editing sidebar content</h3> <!-- Header 1 style -->

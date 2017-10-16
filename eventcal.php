@@ -22,7 +22,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->		
 		<?php get_main_menu(); ?>
 <!-- Main Content Starts Below-->								
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 						<div id = "wrapper1">
 						          <h1>Volunteer Event Calendar</h1> <!-- Header 1 style -->
 						          <iframe src="https://www.google.com/calendar/embed?title=United%20Way%20Athens-Limestone%20County%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ff9900&amp;src=unitedwayalc%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FChicago"

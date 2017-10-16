@@ -29,7 +29,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 						<h1>Student United Way</h1> <!-- Header 1 style -->
 						  <h2>Calhoun Community College</h2>  <!-- Header 2 style -->
 						<b>Dr. Dennis Smith</b></br>

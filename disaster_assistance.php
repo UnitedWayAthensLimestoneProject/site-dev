@@ -30,7 +30,7 @@
 <!--Sidebar Code-->			
 		<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->								
-				<div id="content"> <!-- css division "content" -->			
+				<div class="content"> <!-- css division "content" -->			
 				<h1>Disaster Assistance</h1> <!-- Header 1 style -->
 				
 				

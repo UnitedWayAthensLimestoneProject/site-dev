@@ -61,7 +61,7 @@
               </div></div>  <!-- close css division "sidQuote" -->
 <!-- Main Content -->		
 			
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 				
 				
 				

@@ -31,7 +31,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content">  <!-- css division "content" -->
+				<div class="content">  <!-- css division "content" -->
 								  <h1>Retired Educator Recognition</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
 						          <p>Nominate a favorite teacher from your childhood to be recognized at our Day of

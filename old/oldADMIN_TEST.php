@@ -30,7 +30,7 @@
 <?php include("sidebar.php");?>
 <!-- Main Content -->
 
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 					<h1>Admin Test Page - for editing sidebar content</h1> <!-- Header 1 style -->
           <!-- PUT STUFF HERE -->
 					<p>New uploaded images will overwrite old images</p>

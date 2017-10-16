@@ -191,7 +191,7 @@ div.main
 }
 
 /* main content styling */
-#content 
+.content 
 {
     width: 70%;
 	margin: 0 auto;
@@ -201,7 +201,7 @@ div.main
 }
 
 /* main content paragraph style */
-#content p
+.content p
 {
     padding: 0px 0px 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -211,7 +211,7 @@ div.main
 }
 
 /* main content title styling*/
-#content p.title
+.content p.title
 {
     padding: 0px 0px 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -220,7 +220,7 @@ div.main
 	color: #f57814;
 }
 
-#content img{
+.content img{
 	max-width: 90%;
 }
 
@@ -332,7 +332,7 @@ img.float-left
 }
 
 /* content button for Partners page */	
-#content button
+.content button
 {
 	width: 250px;
 	height: 90px;
@@ -354,7 +354,7 @@ img.float-left
 }
 		
 /* content button for Partners page - hover-over */			
-#content button:hover
+.content button:hover
 {
 	background: #0086B3;
 	cursor: pointer;
@@ -362,7 +362,7 @@ img.float-left
 }
 
 /* content button for Partners page - image adjustment*/	
-#content img.half 
+.content img.half 
 { 
 	height: 50px;
 	width: 150px;
@@ -566,18 +566,18 @@ iframe{
 	}
 	
 	
-	#content p
+	.content p
 {
 	font-size: 14px;
 }
 
 /* main content title styling*/
-#content h1
+.content h1
 {
 	font-size: 18px;
 }
 	
-#content h2
+.content h2
 {
 	font-size: 18px;
 }	
@@ -613,17 +613,17 @@ iframe{
 		font-size: 14px;
 	}
 	
-	#content{
+	.content{
 		float: none;
 		width: 80%;
 	}
 	
-	#content h1
+	.content h1
 {
 	text-align: center;
 }
 	
-#content h2
+.content h2
 {
 	text-align: center;
 }
@@ -661,18 +661,18 @@ iframe{
 		font-size: 12px;
 	}
 	
-#content p
+.content p
 {
 	font-size: 12px;
 }
 
 /* main content title styling*/
-#content h1
+.content h1
 {
 	font-size: 16px;
 }
 	
-#content h2
+.content h2
 {
 	font-size: 16px;
 }
@@ -704,7 +704,7 @@ iframe{
 	
 	
 	/* main content title styling*/
-#content h1
+.content h1
 {
 	font-size: 15px;
 }
@@ -724,23 +724,23 @@ iframe{
 		width: 100%;
 	}
 	
-	#content p
+	.content p
 {
 	font-size: 10px;
 }
 
 /* main content title styling*/
-#content h1
+.content h1
 {
 	font-size: 15px;
 }
 	
-	#content{
+	.content{
 	width: 100%;
 	padding: 0;
 }
 	
-	#content p{
+	.content p{
 		padding: 10px 20px 10px 20px;
 	}
 	
@@ -834,14 +834,8 @@ display: block;
 
 }
 
-.searchMe {
-  padding:8px 15px;
-	background: none;
-  border:0px solid #dbdbdb;
-	color: black;
-}
-
 .barClass {
 	margin-left: 0;
 	width: 70%;
 	}
+

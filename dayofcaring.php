@@ -31,7 +31,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content">  <!-- css division "content" -->
+				<div class="content">  <!-- css division "content" -->
 								  <h1>Day of Caring</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
 						          <p>We support an annual day of volunteering in September. This day of community

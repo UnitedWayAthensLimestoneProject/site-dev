@@ -30,7 +30,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 				<h1>Disaster Relief</h1> <!-- Header 1 style -->
 				<p> <img src="images/helping_hand1.png" alt="Disaster Assistance" class="center"></p>
 				<h2>If you have been affected by a disaster we are here to help!</h2> <!-- Header 2 style -->

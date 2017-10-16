@@ -31,7 +31,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content">  <!-- css division "content" -->
+				<div class="content">  <!-- css division "content" -->
 								  <h1>Stuff the Bus</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
 						          <p>We are collecting new and gently used books for K-12 children. We will give the

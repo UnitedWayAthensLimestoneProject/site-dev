@@ -29,7 +29,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 				<h2>Contact Us</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
 				<p>

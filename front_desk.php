@@ -30,7 +30,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 				<h1>Volunteer Front Desk Program</h1> <!-- Header 1 style -->
 				<!-- paragraph -->
 				<p>RSVP members volunteer as receptionists for our front desk in the lobby of

@@ -30,7 +30,7 @@
 <!--Sidebar Code-->
 <?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div id="content"> <!-- css division "content" -->
+				<div class="content""> <!-- css division "content" -->
 				<h1>Programs funded by the United Way of Athens-Limestone Country.</h1> <!-- Header 1 style -->
 					<button type="button" onclick="window.open('http://www.redcrossrelief.org/')"> 	<img class = "half" src="images/rc_icon.png" alt="RedCross"/><br/></button> <!-- button with link and picture -->
 					<button type="button" onclick="window.open('http://casalimestonecounty.org/services.html')"><img class = "half" src="images/casa_icon.png" alt="CASA"/><br/></button> <!-- button with link and picture -->

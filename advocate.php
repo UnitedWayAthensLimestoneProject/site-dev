@@ -58,7 +58,7 @@
 					</div><br><br>                      			
               </div></div>  <!-- close css division "sidQuote" -->	
 <!-- Main Content Starts Below-->				
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 					<h1>Advocate</h1> <!-- Header 1 style -->
 					<!-- paragraph -->
 					<p>You can make change happen with your voice:</p> 

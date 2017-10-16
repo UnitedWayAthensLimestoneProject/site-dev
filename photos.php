@@ -32,7 +32,7 @@
 			<div id="wrapper2"> <!-- css division "wrapper2" -->
   <!-- close css division "sidQuote" --> 				
 <!-- Main Content Starts Below-->								
-				<div id="content"> <!-- css division "content" -->
+				<div class="content"> <!-- css division "content" -->
 				  <h1>Photos</h1> <!-- Header 1 style -->
 				  <!--http://embedsocial.com/embed-gallery.php-->
 				  <iframe src="http://embedsocial.com/facebook_album/album_photos/245161305499772" width="880" height="1500" style="border: none;"></iframe> <!-- Embedded Facebook Photo Album -->
