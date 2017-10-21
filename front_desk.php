@@ -1,7 +1,5 @@
 <?php
-
 	require_once("./inc/functions.php");
-
 ?>
 <!DOCTYPE html>
 <!-- unitedwayathenslimestone.com - Volunteer Page -->
@@ -35,7 +33,7 @@
 				<!-- paragraph -->
 				<p>RSVP members volunteer as receptionists for our front desk in the lobby of
 				United Way. The program has enhanced the way United Way interacts with the
-			  public as they enter the facility.</br></br> Please Contact Leigh Fogg at:</br><a href="tel:2562332323">256-233-2323</a> </br> or </br> <a href="mailto:leighandrews@unitedwayalc.com?" title="leighandrews@unitedwayalc.com">leighandrews@unitedwayalc.com</a><br></p>
+			  public as they enter the facility.</br></br> Please Contact Shelley Jones at:</br><a href="tel:2562332323">256-233-2323</a> </br> or </br> <a href="mailto:shelleyjones@unitedwayalc.com?" title="shelleyjones@unitedwayalc.com">shelleyjones@unitedwayalc</a><br></p>
 			  <hr> <!-- horizontal bar -->
 
 				<h2>United Way Gear Shop</h2> <!-- Header 2 style -->
