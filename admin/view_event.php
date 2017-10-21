@@ -55,26 +55,22 @@
 	admin_menu();
 
 ?>
-
-
-
-
+<!--
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
-
-
-
+-->
 <div id="admin_form_container">
 
 	<div class="form_description" align="center">
 				<h2>Event Administration</h2>
 				<p>Allows Administrators to view current events.</p>
-			</div>
-		<div id="eventTable"></div>				
+	</div>
+		
+    <div class="adminDefaults" >
 			
 			<?php
 							$event_set;
@@ -115,18 +111,29 @@
 							else
 							{
 								?>
-								<div id = "panelError">	<!-- If no events this message occurs -->
+								<div id = "eventDefaults">	<!-- If no events this message occurs -->
 								No Current Events
 								<?php
 							} 
 							
 							?>
-						<br>	
+                <br>	
 						
-						<a href="create_event.php">Create New Event</a>			
+                <a href="create_event.php">Create New Event</a>			
 													
-				</div>
-	
+                </div>
+                
+          <div id="editvoltable"></div>
+                
+      </div>
+      
+      
+      
+      <div class="footer">
+			Designed by Athens State University
+		</div>
+      
+    </div>
 	
 
 <body>

@@ -30,8 +30,7 @@
 	// Authorize users to access page. Function is found in authorize.php.
 	// Current user groups are Administrators, Volunteers, and Agencies
 	// authorize_user(); will allow anyone that is logged in to access the page
-	authorize_user(array("Administrators"));
-	
+	authorize_user(array("Administrators"));	
 
 	
 	if (isset($_POST['form_id']) || isset($_GET['edit_vol'])) {
@@ -198,7 +197,6 @@ EOD;
 EOD;
 			
 		}
-
 	} else {
 		
 		$javascript = <<<EOD
@@ -228,7 +226,7 @@ EOD;
 	
 
 	$javascript .= "
-	//*ASU2017* Added the w2 function for enabling double click on the grid
+	/* ASU2017 Added the w2 function for enabling double click on the grid */
 	$(function () {    
     $('#editvoltable').w2grid({ 
         name: 'grid', 
@@ -263,10 +261,10 @@ EOD;
         },
         onEdit: function (event) {
 			location.href = 'admin_vols.php?edit_vol='+event.recid;
-        },
-        onDblClick: function (event) {
+        }, 
+				onDblClick: function (event) {
                         location.href = 'admin_vols.php?edit_vol='+event.recid;
-        },
+        },       
         onDelete: function (event) {
             console.log('delete has default behaviour');
         },
@@ -313,18 +311,17 @@ EOD;
 				or handle_error("an error occurred while searching for volunteers", mysql_error());
 			
 			$num_of_rows = mysql_num_rows($result);
-
 		} catch (Exception $exc) {
 			handle_error("something went wrong while attempting to search for volunteers.",
 				"Error searching for volunteers: " . $exc->getMessage());
 		}
 		
 		while ($row = mysql_fetch_array($result))
-		{
+		{      
 		/*	**ASU2016**  Added database fields for (disaster, community, date_of_birth) 	6/20/2016		*/
 			$javascript .= "{ recid: ".$row['vol_id'].", reg_date: '".date("n/j/Y",strtotime($row['reg_date']))."', first_name: '".$row['first_name']."', last_name: '".$row['last_name']."', email_address: '".$row['email_address']."', home_phone: '".$row['home_phone']."', cell_phone: '".$row['cell_phone']."', disaster: '".$row['disaster']."', community: '".$row['community']."', date_of_birth: '".date("Y-m-d",strtotime($row['date_of_birth']));
 		/* **ASU2016**  End added code 6/20/2016   */
-			
+       
 			if($row['active']==1)
 			{
 				$javascript .= "', active: 'ACTIVE', active_color: '<font color=green>ACTIVE</font>' },";
@@ -334,7 +331,6 @@ EOD;
 			$javascript .= "
 			";
 		}
-
 $javascript .= "		
         ]
     });    
@@ -343,7 +339,6 @@ $javascript .= "
 	
 	page_start("United Way of Athens/Limestone County EMD Admin Page", $javascript, "adminVols",
 			   $_REQUEST['success_message'], $_REQUEST['error_message']);
-
 	admin_menu();
 ?>
 		

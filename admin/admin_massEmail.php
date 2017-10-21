@@ -43,8 +43,8 @@
   <div class="form_description" align="center">
     <h2>Admin - Mass Email to Volunteers</h2>
     <p></p>
-  </div>
-
+  </div>  
+  
 <?php
 
 function printStuff($array) {
@@ -77,29 +77,7 @@ mysql_select_db(DATABASE_NAME)
 
 ?>
 
-<style>
-	.scroll {
-		position:relative;
-		margin-left:3%;
-    width: 94%;
-    height: 550px;
-		overflow-y: scroll;
-		overflow-x: hidden;
-}
-
-	.resizedTextbox
-		{position:relative;
-    width:94%;
-		margin-left:3%;
-		height:30px;}
-
-	.tb {
-	 border-collapse: collapse;
-	 border: 1px solid;
-	}
-</style>
-
-<p style='margin-left:10px'>Results:</p> <br>
+<p id="emailResults" >Results:</p> <br>
 <input type="text" value="<?php printStuff($_POST); ?>" class="resizedTextbox"/>
 <br><br>
 
@@ -118,15 +96,15 @@ while ($row = mysql_fetch_assoc($result)) {
 echo "</table>";
 echo "</div>"; //end scroll class
 echo "<br>";
-echo "<input style='margin-left:10px' type='submit'/>";
+echo "<input id='btnSubmitEmail' type='submit'/>";
 echo "</form>";
 
 mysql_free_result($result);
 
  ?>
-
+<!--
   <div id="editvoltable"></div>
-
+-->
 </div>
 <div class="footer">
   Designed by Athens State University

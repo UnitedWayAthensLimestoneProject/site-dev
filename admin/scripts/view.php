@@ -254,7 +254,7 @@ EOD;
 				<li><a href="admin_opportunities.php" id="adminOpportunitiesLink">Opportunities</a></li>
 				-->
 			<!-- **ASU2016** End edit coded 6/19/2016 -->
-				<li><a href="view_event.php" id="adminSkillsLink">Events Calendar</a></li>
+				<li><a href="view_event.php" id="adminSkillsLink">Calendar</a></li>
 				<li><a href="admin_skills.php" id="adminSkillsLink">Skills</a></li>
 				<li><a href="admin_users.php" id="adminUsersLink">Users</a></li>
 				<li><a href="admin_vols.php" id="adminVolsLink">Volunteers</a></li>
@@ -271,7 +271,7 @@ EOD;
 				<li><a href="admin_disaster.php" id="adminDisasterLink">Disasters</a></li>
 				<li><a href="admin_damage.php" id="adminDamageLink">Damage</a></li>
 				<li><a href="admin_donation.php" id="adminDonationLink">Donations</a></li>
-				<li><a href="admin_reviews_vols.php" id="{$adminReviewsLinkFormat}">New Volunteers</a></li>
+				<li><a href="admin_reviews_vols.php" id="{$adminReviewsLinkFormat}">New Vols</a></li>
 				<li><a href="admin_reviews_groups.php" id="{$adminReviewGroupsLinkFormat}">New Group</a></li>
 				<li><a href="admin_reviews_opps.php" id="{$adminReviewOppsLinkFormat}">New Opps</a></li>
 				<li><a href="admin_reviews_disaster.php" id="{$adminReviewDisasterLinkFormat}">New Disasters</a></li>
@@ -284,7 +284,7 @@ EOD;
 			-->
 			<!-- Fall 2017 -->
 				<li><a href="admin_massEmail.php" id="adminMassEmail">Mass Email</a></li>
-				<li><a href="admin_sidebar.php" id="adminSidebar">Sidebar Images</a></li>
+				<li><a href="admin_sidebar.php" id="adminSidebar">Edit Sidebar</a></li>
 				<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
 				</ul>
 		</div>
