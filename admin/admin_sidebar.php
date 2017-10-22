@@ -44,10 +44,7 @@
 
 <div id="admin_form_container">
   <div class="form_description" align="left">
-
-
-
-		<div class="content"> <!-- css division "content" -->
+		<div class="adminDefaults"> <!-- css division "content" -->
 			<div id="headerText" align="center">
 					<h2>Admin - Edit Sidebar Images</h2>
 					<h3>For editing sidebar content</h3> <!-- Header 1 style -->
@@ -55,21 +52,7 @@
 					<p><span>New uploaded images will overwrite old images</span></p>
 					<p>New modified text will replace old text captions</p>
 		</div> <!-- END headerText -->
-			<br>
-
-			<style>
-				.sideImg
-					 {
-						position: relative;
-						margin-left: 2%;
-						width:  40%;
-						height: 35%;
-						background-repeat:   no-repeat;
-						background-size:     cover;
-						margin-bottom:2%;
-					}
-				</style>
-
+			<br>			
 			<!-- sidebar1.jpg -->
 			<h4 class="imageHeader">Image 1</h4>
 			<br>
@@ -78,11 +61,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar1">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText1" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText1" placeholder="Image 1"><?php include(ROOT_PATH."sidebarTxt/textChange1.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -94,11 +77,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar2">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText2" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText2" placeholder="Image 2"><?php include(ROOT_PATH."sidebarTxt/textChange2.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -110,11 +93,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar3">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText3" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText3" placeholder="Image 3"><?php include(ROOT_PATH."sidebarTxt/textChange3.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -126,11 +109,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar4">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText4" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText4" placeholder="Image 4"><?php include(ROOT_PATH."sidebarTxt/textChange4.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -142,11 +125,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar5">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText5" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText5" placeholder="Image 5"><?php include(ROOT_PATH."sidebarTxt/textChange5.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -158,11 +141,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar6">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText6" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText6" placeholder="Image 6"><?php include(ROOT_PATH."sidebarTxt/textChange6.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -174,11 +157,11 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar7">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText7" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText7" placeholder="Image 7"><?php include(ROOT_PATH."sidebarTxt/textChange7.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
@@ -190,26 +173,19 @@
 			<form action="sidebarUpload.php" method="post" class="imageButtons" enctype="multipart/form-data">
 				<input type="file" name="file">
 				<input type="hidden" name="sBar" value="sidebar8">
-				<br> <input type="submit" value="Submit Image">
+				<br> <input id="btnAdmin" type="submit" value="Submit Image">
 			</form>
 			<form action="changeText.php" method="post" class="text-box">
-			<input type="text" size="20" class="form-control" name="userText8" />
-			<input type="submit" value="Submit Text" />
+			<textarea class="form-control" name="userText8" placeholder="Image 8"><?php include(ROOT_PATH."sidebarTxt/textChange8.txt");?></textarea>
+			<br> <input id="btnAdmin" type="submit" value="Submit Text" />
 			</form>
 
 			<br> <br>
 			<!-- END sidebar images and forms -->
 
 					<hr> <!-- horizontal bar -->
-		</div> <!-- close css division "content" -->
-
-
-    <p></p>
+		</div> <!-- close css division "content" -->    
   </div>
-
-
-  <div id="editvoltable"></div>
-
 </div>
 <div class="footer">
   Designed by Athens State University

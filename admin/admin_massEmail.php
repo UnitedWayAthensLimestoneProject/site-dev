@@ -43,7 +43,8 @@
   <div class="form_description" align="center">
     <h2>Admin - Mass Email to Volunteers</h2>
     <p></p>
-  </div>  
+  </div>
+	<div class="adminDefaults">
   
 <?php
 
@@ -77,7 +78,7 @@ mysql_select_db(DATABASE_NAME)
 
 ?>
 
-<p id="emailResults" >Results:</p> <br>
+<p>Results:</p> <br>
 <input type="text" value="<?php printStuff($_POST); ?>" class="resizedTextbox"/>
 <br><br>
 
@@ -96,15 +97,13 @@ while ($row = mysql_fetch_assoc($result)) {
 echo "</table>";
 echo "</div>"; //end scroll class
 echo "<br>";
-echo "<input id='btnSubmitEmail' type='submit'/>";
+echo "<input id='btnAdmin' type='submit'/>";
 echo "</form>";
 
 mysql_free_result($result);
 
  ?>
-<!--
-  <div id="editvoltable"></div>
--->
+ </div>
 </div>
 <div class="footer">
   Designed by Athens State University

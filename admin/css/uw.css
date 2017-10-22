@@ -59,7 +59,7 @@ body {
 }
 
 #wrapper {
-	width: 90%;
+	width: 90%;  
 	margin-right: auto;
 	margin-left: auto;
   	border-right: 2px solid #0a0d4c;
@@ -95,10 +95,6 @@ body {
 	border-bottom-right-radius:20px;
 	-webkit-border-bottom-right-radius:20px;
 	-moz-border-radius-bottomright:20px;
-}
-
-.adminDefaults {
-  margin-left: 5%;
 }
 
 div.banner{
@@ -265,12 +261,17 @@ div.leftright{
 	float: left;
 	margin: 5px 10px 0 0;
 	width: 10%;
-  min-width: 100px;
+  min-width: 90px;
 	display: inline;
 }
 
 * html #adminMenuSidebar {
 	display: inline;
+}
+
+.adminDefaults {
+  margin-left: 5%;
+  font-size: 1em;  
 }
 
 #adminNav {
@@ -305,26 +306,82 @@ div.leftright{
 	text-decoration: none;
 }
 
-@media (max-width:1300px){	
+#admin_form_container
+{
+	background: #fff;
+	float: left;
+	text-align: left;
+	width: 87%;
+	margin-right: auto;
+	min-height: 750px;
+}
+
+@media (max-width:1250px){  
   #adminNav a {
     font-size: .75em;
-  }	
+  }  
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) {  
+  #adminNav a {
+    font-size: .70em;
+  }  
+}
+
+@media (max-width: 1080px) { 
   #adminNav a {
     font-size: .65em;
+  }  
+}
+
+@media (max-width: 900px) {
+  #admin_form_container {
+    width: 85%;
   }
 }
 
-@media (max-width: 1000px) {
-  #adminNav a {
-    font-size: .60em;
+@media (max-width: 770px) {  
+  #admin_form_container {  
+    width: 80%;
+  } 
+}
+
+@media (max-width: 650px) {
+  .adminDefaults {
+    margin-left: 4%;
+    font-size: .90em; 
   }
 }
 
+@media (max-width: 580px) {  
+  #admin_form_container {  
+    width: 75%;    
+  }  
+}
 
+@media (max-width: 520px) {  
+  #admin_form_container {  
+    width: 95%;    
+  }
+  
+  #adminMenuSidebar {
+    display: none;
+  }  
+}
 
+@media (max-width: 410px) {
+  .adminDefaults {
+    margin-left: 2%;
+    font-size: .80em; 
+  }
+}
+
+@media (max-width: 330px) {
+  .adminDefaults {
+    margin-left: 0%;
+    font-size: .70em;  
+  }
+}
 
 
 #adminNav a:hover {
@@ -384,26 +441,21 @@ div.leftright{
 	min-height: 600px; 	
 }
 
-
-#admin_form_container
-{
-	background: #fff;
-	float: left;
-	text-align: left;
-	width: 85%;
-	margin-right: auto;
-	/*min-height: 780px; 	*/
+.sideImg {
+  position: relative;  
+  width:  40%;
+  height: 35%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  margin-bottom:2%;
 }
-
-
-
 
 #editvoltable
 {
 	background: #fff;
 	float: left;
 	text-align: left;
-	width: 850px;
+	width: 85%;
 	margin-right: auto;
 	min-height: 600px; 	
 }
@@ -1250,8 +1302,7 @@ table.editopptable td {
 }
 
 .scroll {
-  position:relative;
-  margin-left:3%;
+  position:relative;  
   width: 94%;
   height: 560px;
   overflow-y: scroll;
@@ -1260,8 +1311,7 @@ table.editopptable td {
 
 .resizedTextbox  {
   position:relative;
-  width:94%;
-  margin-left:3%;
+  width:93%;  
   height:30px;
 }
 
@@ -1270,14 +1320,23 @@ table.editopptable td {
   border: 1px solid;
 }
 
-#btnSubmitEmail {
-  margin-left: 10px;
+#btnAdmin {
+  background: #e6e6e6;
+  margin-left: 0px;
   margin-top: 5px;
-  margin-bottom: 10px;
-  background: #e6e6e6; 
+  margin-bottom: 10px;   
 }
 
-#btnSubmitEmail:hover {
+#btnAdmin:hover {
   background: #f9b479;
   font-weight: bold;  
+}
+
+.form-control {
+  width: 40%;  
+  height: 8em;  
+}
+
+.imageButtons {
+  margin-bottom: 10px;
 }

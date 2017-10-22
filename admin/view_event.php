@@ -55,14 +55,7 @@
 	admin_menu();
 
 ?>
-<!--
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
--->
+
 <div id="admin_form_container">
 
 	<div class="form_description" align="center">
@@ -121,10 +114,7 @@
 						
                 <a href="create_event.php">Create New Event</a>			
 													
-                </div>
-                
-          <div id="editvoltable"></div>
-                
+                </div>          
       </div>
       
       
@@ -134,6 +124,7 @@
 		</div>
       
     </div>
+		</div>
 	
 
 <body>

@@ -93,11 +93,7 @@ EOD;
 			<ul id="mainNav" class="center">
 EOD;
 		if (isset($_SESSION['user_id'])) {
-			if (user_in_group($_SESSION['user_id'], "Administrators")) {
-				//echo "<li><a href='register_volunteer.php' id='addVolLink'>Add Volunteer</a></li>\n";
-				//echo "<li><a href='register_group.php' id='addGroupLink'>Add Group</a></li>\n";
-				//echo "<li><a href='skills_search.php' id='searchAllLink'>Skills Search</a></li>\n";
-				//echo "<li><a href='agency_opp.php' id='agencyOppLink'>Agency Opportunity</a></li>\n";
+			if (user_in_group($_SESSION['user_id'], "Administrators")) {				
 				if ($count_records >= 1 || $count_opp_records >= 1 || $count_grp_records >= 1) {
 					echo "<li style='position:relative;border:0;padding:0px;' id='MyBadge'><a href='admin.php' id='adminLink'>Admin</a></li>\n";
 				} else {
@@ -132,11 +128,7 @@ EOD;
 
 	function display_message($msg, $msg_type) {
 
-		echo('<script> w2alert("'.$msg.'"); </script>');
-
-		//echo "			<div id='{$msg_type}' class='{$msg_type}'>\n";
-		//echo "				<p>{$msg}</p>\n";
-		//echo "			</div>\n";
+		echo('<script> w2alert("'.$msg.'"); </script>');		
 	}
 
 	function admin_menu() {
@@ -247,13 +239,7 @@ EOD;
 		echo <<<EOD
 	<div id="adminWrapper">
 		<div id="adminMenuSidebar">
-			<ul id="adminNav">
-			<!-- **ASU2016** Removed the Agencies and Opportunites options by request of customer on 6/19/2016 -->
-				<!--
-				<li><a href="admin_agencies.php" id="adminAgenciesLink">Agencies</a></li>
-				<li><a href="admin_opportunities.php" id="adminOpportunitiesLink">Opportunities</a></li>
-				-->
-			<!-- **ASU2016** End edit coded 6/19/2016 -->
+			<ul id="adminNav">						
 				<li><a href="view_event.php" id="adminSkillsLink">Calendar</a></li>
 				<li><a href="admin_skills.php" id="adminSkillsLink">Skills</a></li>
 				<li><a href="admin_users.php" id="adminUsersLink">Users</a></li>
@@ -274,9 +260,9 @@ EOD;
 				<li><a href="admin_reviews_vols.php" id="{$adminReviewsLinkFormat}">New Vols</a></li>
 				<li><a href="admin_reviews_groups.php" id="{$adminReviewGroupsLinkFormat}">New Group</a></li>
 				<li><a href="admin_reviews_opps.php" id="{$adminReviewOppsLinkFormat}">New Opps</a></li>
-				<li><a href="admin_reviews_disaster.php" id="{$adminReviewDisasterLinkFormat}">New Disasters</a></li>
+				<li><a href="admin_reviews_disaster.php" id="{$adminReviewDisasterLinkFormat}">New Disaster</a></li>
 				<li><a href="admin_reviews_damage.php" id="{$adminReviewDamageLinkFormat}">New Damage</a></li>
-				<li><a href="admin_reviews_donation.php" id="{$adminReviewDonationLinkFormat}">New Donations</a></li>
+				<li><a href="admin_reviews_donation.php" id="{$adminReviewDonationLinkFormat}">New Donation</a></li>
 			<!-- **ASU2016 Removed the Emails option by request of customer on 6/18/2016
 				<li><a href="admin_emails.php" id="adminEmailsLink">Emails</a></li>
 

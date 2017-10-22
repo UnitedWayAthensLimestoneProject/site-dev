@@ -41,10 +41,7 @@
 			<div class="form_description" align="center">
 				<h2>United Way EMD Administration</h2>
 				<p>This is where an administrator would come to add/edit users, add/edit skills, etc.</p>
-			</div>	
-      
-      <div id="editvoltable"></div>
-      
+			</div>	     
 			<form id="form_admin" class="appnitro" method="post" action="">					
 				<ul>
 		 			<li>
