@@ -44,21 +44,25 @@
                  //debug
                  $db = mysql_num_rows($event_set);
                  if (is_null($db))
-                  echo "null";
+                  echo "null"; ?>
+
+                  <table>
+								  <tr>	<!-- Starts Head of table -->
+								    <th>Date</th>
+								    <th>Event</th>
+								    <th>Location</th>
+								  </tr>
+
+              <?php
 
 							if (mysql_num_rows($event_set) > 0)
 							{
 								while ($row = mysql_fetch_assoc($event_set))
 								{ ?>  <!-- Run this code while the number of events is greater than 0 -->
 
-						          <table>
-								  <tr>	<!-- Starts Head of table -->
-								    <th>Date</th>
-								    <th>Event</th>
-								    <th>Location</th>
-								  </tr>
-								  <tr>
-								    <td> <?php
+
+							<tr>
+							 <td> <?php
 								 $time = $row['time'];
 								 $date = $row['date'];
 								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
@@ -67,10 +71,11 @@
 								    <td><a href="http://maps.google.com/?q=<?php echo htmlentities($row['location']);?>" target="_blank"><?php echo htmlentities($row['location']); ?></a></td>
 								  </tr>
 
-								</table>
+
 
 								<?php
 								}
+                echo "</table>";
 							}
 
 							else
