@@ -67,22 +67,22 @@ function get_main_menu()
 			              </ul>
 			            </li>
 										<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
-									<ul class="dropdown-menu">									
+									<ul class="dropdown-menu">
 										<form class="navbar-form" role="search" action="https://google.com/search" method="get">
 										<div class="input-group">
-										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />										
-										<input type="text" class="form-control" placeholder="Search..." />
+										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
+										<input type="text" name="q" class="form-control" placeholder="Search..." />
 											<span class="input-group-btn">
-                        <button type="submit" class="btn btn-default">
+                        <button type="submit" name="sa" class="btn btn-default">
                             <span class="glyphicon glyphicon-search">
 															<span class="sr-only">Search...</span>
 														</span>
-                        </button>  
+                        </button>
                     </span>
-										</div>										
+										</div>
 									</ul>
-									</li>										
-									</li>																
+									</li>
+									</li>
 			          </ul>
 			        </div>
 				    <!-- /.navbar-collapse -->
