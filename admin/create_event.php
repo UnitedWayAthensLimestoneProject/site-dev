@@ -1,5 +1,5 @@
 <?php
-	
+
 	//Need to build a database to connect this to
 	require_once 'scripts/authorize.php';
 	require_once 'scripts/database_connection.php';
@@ -12,13 +12,13 @@
 
 	// set time-out period (in seconds)
 	$inactive = 600;
- 
+
 	// check to see if $_SESSION["timeout"] is set
-	if (isset($_SESSION["timeout"])) 
+	if (isset($_SESSION["timeout"]))
 	{
 		// calculate the session's "time to live"
 		$sessionTTL = time() - $_SESSION["timeout"];
-		if ($sessionTTL > $inactive) 
+		if ($sessionTTL > $inactive)
 		{
 			session_destroy();
 			$msg = "Your session has timed out due to inactivity. Please log in again to continue.";
@@ -26,39 +26,38 @@
 			exit();
 		}
 	}
- 
+
 	$_SESSION["timeout"] = time();
-	
+
 	// Authorize users to access page. Function is found in authorize.php.
 	// Current user groups are Administrators, emails, and Agencies
 	// authorize_user(); will allow anyone that is logged in to access the page
 	authorize_user(array("Administrators"));
 
 
-	
-	
+
+
 	//Query Database for any current entries
 
 	if (isset ($_POST['submit']))
 	{
+		//Convert from 12 to 24 hr time format
+		$newTime = date("H:i", strtotime($_POST["time"]));
+
 		$datedb = mysql_prep($_POST["date"]);
-		$timedb = mysql_prep($_POST["time"]);
+		$timedb = mysql_prep($newTime);
 		$locationdb = mysql_prep($_POST["location"]);
 		$eventdb = mysql_prep($_POST["event"]);
 		$id = $eventID["id"];
-		
-		
+
+
 		$query = "INSERT INTO calendar (date, time, event, location) VALUES (";
 		$query .= " '{$datedb}', '{$timedb}', '{$eventdb}', '{$locationdb}' ";
 		$query .= ")";
 		$result= mysql_query($query);
-	
-		
-		redirect_to("view_event.php"); 
-		
 
-		
-		
+
+		redirect_to("view_event.php");
 	}
 
 
@@ -68,23 +67,23 @@
 		header("Location: " . $new_location);
 		exit;
 	}
-	
+
 	function mysql_prep($string)
 	{
 		global $connection;
-		
+
 		$escaped_string = mysql_real_escape_string($string);
 		return $escaped_string;
 	}
 
-	
+
 
 	function find_event_by_id($event_id)
 	{
 		global $connection;
-		
+
 		$safe_event_id = mysql_real_escape_string($event_id);
-		
+
 		$query = "SELECT * ";
 		$query .= "FROM calendar ";
 		$query .= "WHERE id = {$safe_event_id} ";
@@ -98,7 +97,7 @@
 		{
 			return null;
 		}
-	
+
 
 	}
 
@@ -117,34 +116,38 @@
 <title>Untitled Document</title>
 </head>
 
-
+<!-- JavaScript GUI date and time pickers -->
+<!-- compatible with all browsers -->
+<script>
+$(document).ready(function() {
+    $("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+		$('#timepicker').timepicker({ 'timeFormat': 'h:i A' });
+});
+</script>
 
 <div id="admin_form_container">
 
 	<div class="form_description" align="center">
 				<h2>Event Administration</h2>
 				<p>Allows Administrators to create an event.</p>
-			</div>	
-			
+			</div>
+
 			<div id="eventTable"></div>
-			
+
 	<form action = "create_event.php" method= "post">
-				
-		<input type="date" name = "date" placeholder = "Date" required>
-		
-		<input type="time" name = "time" placeholder = "Time" required>
-		
+
+		<input type="text" name = "date" id="datepicker" placeholder ="Date" required>
+
+		<input type="text" name = "time" id="timepicker" placeholder="Time" required>
+
  		<input type = "text" name = "event" placeholder = "Event Name"  maxlength="250" required>
- 			
+
 		<input type = "text" name = "location" placeholder = "Event Location" maxlength="250" required><br><br>
- 						
- 		<input type="submit" name = "submit" value = "Create"> 				
+
+ 		<input type="submit" name = "submit" value = "Create">
 	</form>
-	
-		
+
 </div>
-	
-	
 
 <body>
 </body>
