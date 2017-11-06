@@ -68,7 +68,7 @@ function get_main_menu()
 			            </li>
 										<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<form class="navbar-form" role="search" action="https://google.com/search" method="get">
+										<form class="navbar-form" role="search" action="https://google.com/search" method="get" target="_blank">
 										<div class="input-group">
 										<input type="hidden" name="sitesearch" value="http://www.unitedwayathenslimestone.com/" />
 										<input type="text" name="q" class="form-control" placeholder="Search..." />
