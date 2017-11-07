@@ -241,18 +241,23 @@ EOD;
 		<div id="adminMenuSidebar">
 			<ul id="adminNav">						
 				<li><a href="view_event.php" id="adminSkillsLink">Calendar</a></li>
+        <!-- Fall 2017 (Start) -->
+        <li><a href="admin_massEmail.php" id="adminMassEmail">Email</a></li>
+        <li><a href="admin_sidebar.php" id="adminSidebar">Edit Sidebar</a></li>
+				<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
+        <!-- Fall 2017 (End) -->
 				<li><a href="admin_skills.php" id="adminSkillsLink">Skills</a></li>
 				<li><a href="admin_users.php" id="adminUsersLink">Users</a></li>
+        <!-- **ASU2016** Added Email Volunter on 7/10/2016 -->
+				<li><a href="admin_vols_email.php" id="adminVolsEmailLink">Criteria Email</a></li>
+			<!-- **ASU2016** End edit coded 7/10/2016 -->
 				<li><a href="admin_vols.php" id="adminVolsLink">Volunteers</a></li>
 			<!-- **ASU2016** Added Volunteers by Age on 6/28/2016 -->
 				<li><a href="admin_vols_community.php" id="adminVolsCommunityLink">(V-Community)</a></li>
 				<li><a href="admin_vols_disaster.php" id="adminVolsDisasterLink">(V-Disaster)</a></li>
 				<li><a href="admin_vols_age.php" id="adminVolsAgeLink">(V-Age)</a></li>
 				<li><a href="admin_vols_skills.php" id="adminVolsSkillLink">(V-Skills)</a></li>
-			<!-- **ASU2016** End edit coded 6/28/2016 -->
-			<!-- **ASU2016** Added Email Volunter on 7/10/2016 -->
-				<li><a href="admin_vols_email.php" id="adminVolsEmailLink">Email Vols</a></li>
-			<!-- **ASU2016** End edit coded 7/10/2016 -->
+			<!-- **ASU2016** End edit coded 6/28/2016 -->			
 				<li><a href="admin_groups.php" id="adminGroupsLink">Groups</a></li>
 				<li><a href="admin_disaster.php" id="adminDisasterLink">Disasters</a></li>
 				<li><a href="admin_damage.php" id="adminDamageLink">Damage</a></li>
@@ -265,13 +270,7 @@ EOD;
 				<li><a href="admin_reviews_donation.php" id="{$adminReviewDonationLinkFormat}">New Donation</a></li>
 			<!-- **ASU2016 Removed the Emails option by request of customer on 6/18/2016
 				<li><a href="admin_emails.php" id="adminEmailsLink">Emails</a></li>
-
-
-			-->
-			<!-- Fall 2017 -->
-				<li><a href="admin_massEmail.php" id="adminMassEmail">Mass Email</a></li>
-				<li><a href="admin_sidebar.php" id="adminSidebar">Edit Sidebar</a></li>
-				<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
+			-->				
 				</ul>
 		</div>
 EOD;

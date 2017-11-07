@@ -1,4 +1,9 @@
-/* css reset */
+/*
+CSS Styles for Admin Pages
+
+admin.php link list style inspired by: https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -272,6 +277,51 @@ div.leftright{
 .adminDefaults {
   margin-left: 5%;
   font-size: 1em;  
+}
+
+#divLinks {
+  width: 60%;
+  margin-left: 15%;
+  max-width:200px;
+}
+
+#h2Links {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#ulLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#liLinks {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+#liLinks:last-child {
+  border: none;
+}
+
+#liLinks a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, backgound-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, backgound-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, backgound-color 0.3s ease;
+  transition: font-size 0.3s ease, backgound-color 0.3s ease;
+}
+
+#liLinks a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
 }
 
 #adminNav {
