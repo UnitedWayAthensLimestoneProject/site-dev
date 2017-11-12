@@ -147,7 +147,7 @@ $(document).ready(function() {
 
 	<form action = "edit_event.php?id=<?php echo urlencode($eventID["id"]); ?>" method= "post">
 
-		<input type = "text" name = "date" id="datepicker" placeholder="Date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required>
+		<input type = "text" name = "date" id="datepicker" placeholder="Date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required readonly>
 
 		<input type = "text" name = "time" id="timepicker" placeholder="Time" value="<?php echo htmlspecialchars($eventID["time"]); ?>"required>
 

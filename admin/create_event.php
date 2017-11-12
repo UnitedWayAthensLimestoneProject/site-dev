@@ -136,7 +136,7 @@ $(document).ready(function() {
 
 	<form action = "create_event.php" method= "post">
 
-		<input type="text" name = "date" id="datepicker" placeholder ="Date" required>
+		<input type="text" name = "date" id="datepicker" placeholder ="Date" required readonly>
 
 		<input type="text" name = "time" id="timepicker" placeholder="Time" required>
 
