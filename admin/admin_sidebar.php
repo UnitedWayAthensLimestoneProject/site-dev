@@ -52,7 +52,35 @@
 					<p><span>New uploaded images will overwrite old images</span></p>
 					<p>New modified text will replace old text captions</p>
 		</div> <!-- END headerText -->
-			<br>			
+
+<?php
+
+	//after coming back from sidebarUpload.php
+	//this displays notification to users
+	if (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'data_saved') {
+	    echo "Successfully updated image.\n";
+			unset( $_SESSION['note']);
+	}
+	elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'text_saved') {
+	    echo "Successfully updated text.\n";
+			unset( $_SESSION['note']);
+	}
+	elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'text_not') {
+	    echo "Error: unable to update text.\n";
+			unset( $_SESSION['note']);
+	}
+	elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'not_saved') {
+		echo "Error: unable to update image.\n";
+		unset( $_SESSION['note']);
+	}
+	else {
+		unset( $_SESSION['note']);
+	}
+	echo "<br>";
+
+ ?>
+
+			<br>
 			<!-- sidebar1.jpg -->
 			<h4 class="imageHeader">Image 1</h4>
 			<br>
@@ -184,7 +212,7 @@
 			<!-- END sidebar images and forms -->
 
 					<hr> <!-- horizontal bar -->
-		</div> <!-- close css division "content" -->    
+		</div> <!-- close css division "content" -->
   </div>
 </div>
 <div class="footer">

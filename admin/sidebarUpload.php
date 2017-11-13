@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+$uploaded = false;
 $filename = $_FILES['file']['name']; //original name of uploaded file
 $tmp_name = $_FILES['file']['tmp_name']; //where file is named/placed temporarily
 $defaultName = $_POST['sBar']; //hidden value
@@ -33,17 +36,28 @@ if (isset($filename)){
       //put new file with appended random numbers to name into sidebarImgs dir
       $location = ROOT_PATH.'sidebarImgs/';
       if(move_uploaded_file($tmp_name, $location.$newName)) {
-        echo 'File uploaded successfully';
+        //echo 'File uploaded successfully';
+        $uploaded = true;
       }
     } else {
-      echo 'File type not supported';
+      //echo 'File type not supported';
+      $uploaded = false;
     }
   }
 } else {
-  echo 'Please choose a file';
+  //echo 'Please choose a file';
 }
 
-?>
+if ($uploaded) {
+  $_SESSION['note'] = 'data_saved';
+}
+else {
+  $_SESSION['note'] = 'not_saved';
+}
 
-<br>
-<a href="admin_sidebar.php">Back to Admin Page</a>
+//redirect back to admin_sidebar.php
+//DO NOT output anything before this or this call will not work
+//also cannot use any plain HTML before this call
+header('Location: admin_sidebar.php');
+exit;
+?>
