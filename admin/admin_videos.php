@@ -70,10 +70,22 @@ if (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'data_saved') {
     echo "Successfully updated video.\n";
 		unset( $_SESSION['note']);
 }
-elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
+elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'data_deleted') {
+    echo "Successfully deleted video.\n";
+		unset( $_SESSION['note']);
+}
+elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'not_deleted') {
+    echo "Error: unable to delete video.\n";
+		unset( $_SESSION['note']);
+}
+elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] == 'not_saved') {
 	echo "Error: unable to update video.\n";
 	unset( $_SESSION['note']);
 }
+elseif (isset( $_SESSION['note'] )) {
+	unset( $_SESSION['note']);
+}
+echo "<br>";
 
 ?>
 
@@ -86,23 +98,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[0]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[0]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[0]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="1">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+    <input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -115,23 +128,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[1]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[1]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[1]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="2">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -144,23 +158,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[2]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[2]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[2]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="3">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -173,23 +188,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[3]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[3]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[3]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="4">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -202,23 +218,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[4]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[4]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[4]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="5">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -231,23 +248,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[5]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[5]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[5]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="6">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -260,23 +278,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[6]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[6]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[6]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="7">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -289,23 +308,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[7]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[7]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[7]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="8">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -318,23 +338,24 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[8]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[8]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[8]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="9">
-    <input type="submit" id="btnAdmin" value="Submit"/>
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
   </form>
-  
+
   <hr class="vidLine"/>
 </div>
 
@@ -347,22 +368,23 @@ elseif (isset( $_SESSION['note'] ) && $_SESSION['note'] != 'data_saved') {
         Video Title: <input type="text" class="vidLayout" name="title" value="<?php echo $titles[9]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Video URL: <input type="text" class="vidLayout" name="url" value="<?php echo $urls[9]; ?>"/>
       </label>
     </p>
-    
+
     <p>
       <label>
         Description: <input type="text" class="vidLayout" name="desc" value="<?php echo $desc[9]; ?>"/>
       </label>
     </p>
-    
+
     <input type="hidden" name="objId" value="10">
-    <input type="submit" id="btnAdmin" value="Submit"/>
-  </form>  
+		<input type="submit" id="btnAdmin" name="save_btn" value="Save"/>
+		<input type="submit" id="btnAdmin" name="delete_btn" value="Delete" onclick="return confirm('Are you sure you want to delete the selected video?')"/>
+  </form>
 </div>
 <!-- End content -->
 
