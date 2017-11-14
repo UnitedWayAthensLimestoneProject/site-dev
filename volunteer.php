@@ -32,7 +32,7 @@
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
 				<h1>Get Involved</h1> <!-- Header 1 style -->
-				<p><img src="images/united_kid.png" alt="Get Involved" width="600" height="300" class="center"></p> <!-- picture -->
+				<p><img src="images/united_kid.png" alt="Get Involved" class="center"></p> <!-- picture -->
 
 				<h2>GIVE AN HOUR. GIVE A SATURDAY. GIVE YOUR BEST.</h2> <!-- Header 2 style -->
 				<!-- paragraph -->

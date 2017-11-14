@@ -170,6 +170,7 @@ div.main {
 .content {
   width: 70%;
 	margin: 0 auto;
+  margin-left: 5px;
   font-family: Arial;
   float: left;
 	padding: 0 0 0 10px; 
