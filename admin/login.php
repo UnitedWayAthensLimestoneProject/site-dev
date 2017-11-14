@@ -112,7 +112,7 @@ EOD;
 					<br>
 					<br>
 					<center>
-					<input type="submit" value="Log In" />
+					<input type="submit" id="btnAdmin" value="Log In" />
 					</center>
 				</fieldset>
 			</form>

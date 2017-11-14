@@ -128,13 +128,14 @@ $(document).ready(function() {
 <div id="admin_form_container">
 
 	<div class="form_description" align="center">
-				<h2>Event Administration</h2>
-				<p>Allows Administrators to create an event.</p>
-			</div>
+    <h2>Event Administration</h2>
+    <p>Allows Administrators to create an event.</p>
+	</div>
 
-			<div id="eventTable"></div>
-
-	<form action = "create_event.php" method= "post">
+  <div id="eventTable"></div>
+  <div class="adminDefaults">
+  
+    <form action = "create_event.php" method= "post">
 
 		<input type="text" name = "date" id="datepicker" placeholder ="Date" required readonly>
 
@@ -144,9 +145,10 @@ $(document).ready(function() {
 
 		<input type = "text" name = "location" placeholder = "Event Location" maxlength="250" required><br><br>
 
- 		<input type="submit" name = "submit" value = "Create">
+ 		<input type="submit" id="btnAdmin" name = "submit" value = "Create">
 	</form>
 
+  </div>
 </div>
 
 <body>
