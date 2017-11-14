@@ -138,14 +138,15 @@ $(document).ready(function() {
 
 <div id="admin_form_container">
 
-	<div class="form_description" align="center">
-				<h2>Event Administration</h2>
-				<p>Allows Administrators to edit events.</p>
-			</div>
+	<div class="form_description" align="center">      
+    <h2>Event Administration</h2>
+    <p>Allows Administrators to edit events.</p>
+	</div>	
 
-			<div id="eventTable"></div>
+	<div id="eventTable"></div>
+  <div class="adminDefaults">
 
-	<form action = "edit_event.php?id=<?php echo urlencode($eventID["id"]); ?>" method= "post">
+    <form action = "edit_event.php?id=<?php echo urlencode($eventID["id"]); ?>" method= "post">
 
 		<input type = "text" name = "date" id="datepicker" placeholder="Date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required readonly>
 
@@ -155,10 +156,10 @@ $(document).ready(function() {
 
 		<input type = "text" name = "location" placeholder="Location" value="<?php echo htmlspecialchars($eventID["location"]); ?>" maxlength="150" required><br><br>
 
- 		<input type="submit" name = "submit" value = "Update">
+ 		<input type="submit" id="btnAdmin" name="submit" value="Update">
 	</form>
-
-
+    
+  </div>
 </div>
 
 

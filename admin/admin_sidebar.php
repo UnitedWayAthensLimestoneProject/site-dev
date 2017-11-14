@@ -51,7 +51,7 @@
 					<!-- PUT STUFF HERE -->
 					<p><span>New uploaded images will overwrite old images</span></p>
 					<p>New modified text will replace old text captions</p>
-		</div> <!-- END headerText -->
+      </div> <!-- END headerText -->
 
 <?php
 

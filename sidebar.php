@@ -3,8 +3,8 @@
 	require_once("inc/functions.php");
 ?>
 
-<div id="wrapper2" top="0" left="0"> <!-- css division "wrapper2" -->
-	<div id = "sideQuote"><br><br> <!-- css division "sidQuote" -->
+<div id="wrapper2"> <!-- css division "wrapper2" -->
+	<div id="sideQuote"><br><br> <!-- css division "sidQuote" -->
               <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="10000" data-cycle-slides="li" data-cycle-random="false" data-cycle-loop="100" data-index=1> <!-- using Cylce2, slideshow of photos -->
 			 <ul>
 				<li><img src=<?php sidebarPath("sidebar1"); ?> alt='sidebar1'></li>
