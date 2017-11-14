@@ -139,7 +139,7 @@ echo '<!-- Footer with info and links -->
 			<a href="http://www.unitedway.org" target="_blank"><img src="images/uw_icon.png" alt="LIVE UNITED" width="50" style="border: none;" class="img" /></a> <!-- link to unitedway.org -->
 			<a href="https://www.facebook.com/pages/United-Way-Athens-Limestone/131401963542374?ref=ts" target="_blank"><img src="images/facebook.jpg" alt="Facebook" width="50" style="border: none;" class="img" /></a> <!-- link to Facebook page -->
 			<a href="https://twitter.com/UWlimestone" target="_blank"><img src="images/twitter.gif" alt="Twitter" width="50" style="border: none;" class="img" /></a> <!-- link to Twitter page -->
-			<a href="http://www.youtube.com/watch?v=y_hEa8_mSh8" target="_blank"><img src="images/youtube.gif" alt="YouTube" width="50" style="border: none;" class="img" /></a> <!-- link to YouTube page -->
+			<a href="https://www.youtube.com/channel/UCXHE9e7AyeOJmiWXnV5zzSQ/featured" target="_blank"><img src="images/youtube.gif" alt="YouTube" width="50" style="border: none;" class="img" /></a> <!-- link to YouTube page -->
 			</p>
 		  </div> <!-- close css division "footer" -->
 ';
