@@ -27,10 +27,12 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!--< ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-						<h1>Student United Way</h1> <!-- Header 1 style -->
+						<h1>Student United Way</h1>
+						<img src="images/calhoun.png" alt="Calhoun Community College" class="center"/>
+						<!-- Header 1 style -->
 						  <h2>Calhoun Community College</h2>  <!-- Header 2 style -->
 						<b>Dr. Dennis Smith</b></br>
 				    	<!-- Email address with link to open a new outgoing email -->

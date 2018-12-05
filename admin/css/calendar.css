@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+	width: 160px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd280;
+}

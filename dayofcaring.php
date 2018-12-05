@@ -28,19 +28,24 @@
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div class="content">  <!-- css division "content" -->
-								  <h1>Day of Caring</h1> <!-- Header 1 style -->
+				<div class="content">  
+				  <div align="center">
+				    <!-- css division "content" -->
+				    <br>
+				    <br>
+				    <img src="images/DayOfCaring.gif" alt="Day of Caring" class="center"/>
+				    </p> 
+				    <!-- picture -->
+			      </div>
+				  <h1>Day of Caring</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
 						          <p>We support an annual day of volunteering in September. This day of community
 						          activity allows businesses, agencies, industries, and individuals to leave their
 						          normal work day to work on community service projects.
-						          <br><br><img src="images/DayOfCaring.gif" alt="Day of Caring" class="center"/></p> <!-- picture -->
 						          <hr> <!-- horizontal bar -->
-				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		  </div> <!-- close css division "content" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

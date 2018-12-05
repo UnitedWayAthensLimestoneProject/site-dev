@@ -75,18 +75,28 @@
 
 						          <table>
 								  <tr>	<!-- Starts Head of table -->
-								    <th>Date</th>
+								    <th>Start Date</th>
+                                    <th>End Date</th>
 								    <th>Event</th>
 								    <th>Location</th>
 								    <th>Actions</th>
 								  </tr>
 								  <tr>
-								    <td> <?php 
+                           
+								    <td> <?php //start date & start time-  Fall 2018
 								 $time = $row['time'];
 								 $date = $row['date'];
 								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
 								 
 								 echo htmlentities($datetime);?></td>
+                      
+                                 <td> <?php  //end date & end time - Fall 2018
+								 $time = $row['time'];
+								 $date = $row['date'];
+								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
+								 
+								 echo htmlentities($datetime);?></td>
+                                 
 								    <td> <?php echo htmlentities($row['event']);?> </td>
 								    <td><?php echo htmlentities($row['location']); ?></td>
 								    <td>

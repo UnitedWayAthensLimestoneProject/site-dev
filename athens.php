@@ -27,11 +27,15 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!--< ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-						<h1>Student United Way</h1> <!-- Header 1 style -->
-				      <h2>Athens State University</h2>  <!-- Header 2 style -->
+					  <h1>Student United Way</h1>
+						<h1 align="center">
+						  <!-- Header 1 style -->
+				          <img src="images/founders-hall.png" alt="Athens State University" class="center"/>
+				  <p>&nbsp;</p>
+						<h2>Athens State University</h2>  <!-- Header 2 style -->
 				    <b>Guy McClure</b></br>
 				    	<!-- Email address with link to open a new outgoing email -->
 							<a href="mailto:guy.mcclure@athens.edu?" title="guy.mcclure@athens.edu">guy.mcclure@athens.edu</a><br>

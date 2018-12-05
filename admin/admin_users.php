@@ -415,7 +415,8 @@ EOD;
 		 		</div>
 			</form>
 			
-			<div id="search_by_radio_buttons" align="center" style="margin-top:50px">
+			<div id="search_by_radio_buttons" align="center" style="margin-top:20px">
+            <h1 style="text-align:center"> Use "%" to search for all.</h1><br>
 				<label class="user_search_form">Search By : </label>
 				<input type="radio" name="search_by" id="search_by_name" value="search_by_name" title="User's Name">
 				<label class="user_search_form" style="text-align:left"> Name</label><br>
@@ -424,6 +425,7 @@ EOD;
 				<label class="user_search_form" style="text-align:left"> Username</label><br><br><br>
 			</div>
 			<form name="form_edit_users_name_search" id="form_edit_users_name_search" method="post" style="margin: 0 25px 10px" action="admin_users.php">
+            
 				<div id="search_for_name" align="center">		
 		 			<label class="user_search_form" for="edit_user_name_search">Name: </label>
 		 			<input type="text" name="edit_user_name_search" id="edit_user_name_search" class="center_text required"
@@ -600,7 +602,8 @@ EOD;
 				</ul>
 			</form>
 			
-			<div id="search_by_radio_buttons2" align="center" style="margin-top:50px">
+			<div id="search_by_radio_buttons2" align="center" style="margin-top:20px">
+            <h1 style="text-align:center"> Use "%" to search for all.</h1><br>
 				<label class="user_search_form2">Search By : </label>
 				<input type="radio" name="search_by2" id="password_search_by_name" value="password_search_by_name" title="User's Name">
 				<label class="user_search_form" style="text-align:left"> Name</label><br>

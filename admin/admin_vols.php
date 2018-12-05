@@ -34,6 +34,8 @@
 
 	
 	if (isset($_POST['form_id']) || isset($_GET['edit_vol'])) {
+	
+	   
 		
 		$searchform = $_POST['form_id'];
 		
@@ -260,10 +262,10 @@ EOD;
 			location.href = 'admin_new_volunteer.php';
         },
         onEdit: function (event) {
-			location.href = 'admin_vols.php?edit_vol='+event.recid;
+			location.href = 'admin_vols_readonly.php?edit_vol='+event.recid;
         }, 
 				onDblClick: function (event) {
-                        location.href = 'admin_vols.php?edit_vol='+event.recid;
+                        location.href = 'admin_vols_readonly.php?edit_vol='+event.recid;
         },       
         onDelete: function (event) {
             console.log('delete has default behaviour');
@@ -340,6 +342,10 @@ $javascript .= "
 	page_start("United Way of Athens/Limestone County EMD Admin Page", $javascript, "adminVols",
 			   $_REQUEST['success_message'], $_REQUEST['error_message']);
 	admin_menu();
+	
+	
+	
+	
 ?>
 		
 		<div id="admin_form_container">
@@ -359,8 +365,10 @@ $javascript .= "
 			<form name="form_search_by_volunteer" id="form_search_by_volunteer" method="post" style="margin:25px 10px" 
 				action="admin_vols.php">
 			</form>
-			
+						 
+							 
 			<form name="form_edit_volunteer" id="form_edit_volunteer" class="appnitro" method="POST" action="scripts/process_admin_volunteers.php">
+          
 				<?php
 					if ($searchbyvol == 1) {
 						$searchbyvol = 0;
@@ -631,21 +639,23 @@ $javascript .= "
 					<input type="radio" name="active_inactive" id="inactive" value="0" title="Inactive" <?php if($vol_row['active'] == 0) {echo 'checked';} ?>>
 						<label for="inactive">Inactive</label></input>
 				</div>
+               
 				<ul>
 					<li class="section_break"></li>
 					<li class="buttons">
 						<input type="hidden" name="form_id" value="submit_form_edit_volunteer">
-						<input type="hidden" name="submit_vol_id" value="<?php echo $vol_row['vol_id']; ?>">					
-						<input type="submit" name="submitAdminVol" id="submitApproveVol" class="button_text" value="Update">
+						<input type="hidden" name="submit_vol_id" value="<?php echo $vol_row['vol_id']; ?>">
+                        		<input type="submit" name="submitAdminVol" id="submitApproveVol" class="button_text" value="Update">
 						<input type="submit" name="submitAdminVol" id="submitDeleteVol" class="button_text" value="Delete">					
 						<input type='reset' name='clearEditVolunteer' id='clearEditVolunteer' class='button_text' value='Cancel' onclick='window.location = window.location.pathname'>
 					</li>
 				</ul>
+                
 			</form>
 		
 		</div>
 		<div class="footer">
-			Designed by Athens State University
+			Designed by Athens State University Computer Science Dept. 2018
 		</div>
 	</div>
 	</div>

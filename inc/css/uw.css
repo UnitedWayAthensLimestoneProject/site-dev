@@ -59,6 +59,7 @@ body {
 }
 
 #wrapper {
+
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
@@ -79,6 +80,7 @@ body {
 	border-bottom-right-radius:20px;
 	-webkit-border-bottom-right-radius:20px;
 	-moz-border-radius-bottomright:20px;
+
 }
 
 #adminWrapper {
@@ -98,17 +100,16 @@ body {
 }
 
 div.banner{
-	background-color: #0a0d4c;
-    margin: 0 auto;
+	background-color: #FFFFFF;
+	margin: 0 auto;
 	padding-top:3px;
 	padding-bottom:5px;
-	width:100%; 
+	width:100%;
 	font-family:"Lucida Grande";
 	font-size:18px;
 	letter-spacing:5px;
 	color:white;
-  
-  	/***  CSS Rounded Corners  ***/
+	/***  CSS Rounded Corners  ***/
 	border-top-left-radius:20px;
 	-webkit-border-top-left-radius:20px;
 	-moz-border-radius-topleft:20px;

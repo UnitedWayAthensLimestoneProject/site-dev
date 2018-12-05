@@ -28,7 +28,7 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
 				<h1>Get Involved</h1> <!-- Header 1 style -->
@@ -60,9 +60,10 @@
 
 			  <hr> <!-- horizontal bar -->
 
-				<h2>United Way Gear Shop</h2> <!-- Header 2 style -->
+				<h2 align="center">United Way Gear Shop</h2> 
+				<!-- Header 2 style -->
 				<!-- paragraph -->
-				<p><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
+				<p align="center"><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
 				</p>
 				<hr> <!-- horizontal bar -->
 				</div> <!-- close css division "content" -->

@@ -22,23 +22,32 @@
 	<link href="inc/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
 	<link href="inc/css/style.css" type="text/css" rel="stylesheet">
 	<!-- include the css style sheet style.css -->
-	</head>
+	<style type="text/css">
+<!--
+.style1 {
+	font-size: 24px
+}
+.style2 {font-size: 36px}
+-->
+    </style>
+</head>
 		<body>
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div class="content""> <!-- css division "content" -->
-					<h1>Our Vision</h1> <!-- Header 1 style -->
+		  <div class="content""> <!-- css division "content" -->
+					<h1 align="center" class="style2"><img src="images/UW_Athens2.jpg" alt="Athens United Way" class="center"/></h1>
+					<h1 align="left" class="style2">Our Vision</h1>
+					<!-- Header 1 style -->
 			          <!-- paragraph -->
-			          <p>United Way of Athens-Limestone County will be a leader in our community
+			          <p class="style1"><span class="style1">United Way of Athens-Limestone County will be a leader in our community
 			          where all individuals and families achieve their potential through education
-			          which leads to financial stability, and healthier lifestyles.</p>
-			          <img src="images/UW_Athens2.jpg" alt="Athens United Way" class="center"/> <!-- picture -->
+			          which leads to financial stability, and healthier lifestyles.</span></p>
+<div align="center"><!-- picture -->
+                  </div>
 				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

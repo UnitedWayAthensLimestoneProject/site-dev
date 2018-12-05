@@ -28,16 +28,18 @@
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content">  <!-- css division "content" -->
 								  <h1>Retired Educator Recognition</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
-						          <p>Nominate a favorite teacher from your childhood to be recognized at our Day of
+						          <p align="left">Nominate a favorite teacher from your childhood to be recognized at our Day of
 						          Caring Celebration on September 12. Click the link below, fill out the form, and email it to us.<br>
-						          <br><a href="Retired_Educator_Recognition_Form.docx" title="Retired_Educator_Recognition_Form"><img src="images/doc_65.png" alt="Retired_Educator_Recognition_Form" style="border: none;" class="img" /></a> <!-- link to Retired Educator form -->
-						          <a href="mailto:unitedway44@unitedwayalc.com?subject=Retired%20Educator%20Form" title="unitedway44@unitedwayalc.com"><img src="images/mail_55.png" alt="unitedway44@unitedwayalc.com" style="border: none;" class="img" /></a></p> <!-- link to open a new outgoing email -->
+						          </p>
+						          <p align="center"><br>
+					                <a href="Retired_Educator_Recognition_Form.docx" title="Retired_Educator_Recognition_Form"><img src="images/doc_65.png" alt="Retired_Educator_Recognition_Form" style="border: none;" class="img" /></a> 
+						            <!-- link to Retired Educator form -->
+					                <a href="mailto:unitedway44@unitedwayalc.com?subject=Retired%20Educator%20Form" title="unitedway44@unitedwayalc.com"><img src="images/mail_55.png" alt="unitedway44@unitedwayalc.com" width="60" height="57" class="img" style="border: none;" /></a></p>
+						          <!-- link to open a new outgoing email -->
 						          <hr> <!-- horizontal bar -->
 				</div> <!-- close css division "content" -->
 			</div>  <!-- close css division "wrapper2" -->

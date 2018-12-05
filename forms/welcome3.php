@@ -77,12 +77,11 @@
 				
 				</table>
 				<ul>
-					<li class="section_break">
-					</li>
-					<li class="buttons">
+					<li class="section_break">					</li>
+			  <li class="buttons">
 						<input id="submitForm" class="button_text" type="submit" name="submit" value="Continue">
 					</li>
-				</ul>
+			  </ul>
 			</form>
   		
   		</div>

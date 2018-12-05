@@ -48,7 +48,8 @@
 
                   <table>
 								  <tr>	<!-- Starts Head of table -->
-								    <th>Date</th>
+								    <th>Start Date</th>
+                                    <th>End Date</th>
 								    <th>Event</th>
 								    <th>Location</th>
 								  </tr>
@@ -65,6 +66,12 @@
 							 <td> <?php
 								 $time = $row['time'];
 								 $date = $row['date'];
+								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
+								 echo htmlentities($datetime);?> </td>
+		
+                                    <td> <?php
+								 $time = $row['endtime'];
+								 $date = $row['enddate'];
 								 $datetime = date("m-d-Y g:i A", strtotime("$date $time"));
 								 echo htmlentities($datetime);?> </td>
 								    <td> <?php echo htmlentities($row['event']);?> </td>

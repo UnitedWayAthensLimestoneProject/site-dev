@@ -28,20 +28,19 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?> -->
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-				<h1>Damage Report</h1>
-				<p> <img src="images/helping_hand1.png" alt="Disaster Assistance" class="center"></p>
-				<h2>Got damage? We can help!</h2>
-
+                <h1 align="left">Damage Report</h1>
+                  <p align="left">Fill out the damage report form here to receive assistance:<br>
+				<p align="center"><img src="images/helping_hand1.png" alt="Disaster Assistance" class="center"></p>
+                <p align="center"><a class="button" href="forms/welcome2.php" target="_blank">Damage ReportForm </a></p>
+				<h2 align="left">Got damage? We can help!</h2>
 				<p> Sometimes natural disasters can leave behind a destructive path. Whether your damage is minor, or you have a significant amount, the United Way of Athens Limestone County can help. Please click the link below to fill out a damage report form if you have received any kind of damage. </p>
-				<p>
-				<br>
-				Fill out the damage report form here to receive assistance:<br> <a class="button" href="forms/welcome2.php" target="_blank">Damage Report Form </a></p>
+				<p align="center">&nbsp;</p>
 				<hr>
-				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		  </div> <!-- close css division "content" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

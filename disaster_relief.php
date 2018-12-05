@@ -28,18 +28,21 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-				<h1>Disaster Relief</h1> <!-- Header 1 style -->
-				<p> <img src="images/helping_hand1.png" alt="Disaster Assistance" class="center"></p>
+				<h1>Disaster Relief</h1>
+				<p>Fill out the disaster relief form here to receive assistance:</p>
+				<!-- Header 1 style -->
+				<p align="center"> <img src="images/helping_hand1.png" alt="Disaster Assistance" class="center"></p>
+				<p align="center"><a class="button" href="forms/welcome1.php" target="_blank">Disaster Relief Form </a></p>
 				<h2>If you have been affected by a disaster we are here to help!</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
-				<p>In the event of a disaster we are here to help. If you have been affected by a disaster and need assistance, please click the link below to fill out a disaster relief form. <br></p>
-
-
+				<p>In the event of a disaster we are here to help. If you have been affected by a disaster and need assistance, please click the link below to fill out a disaster relief form.<br>
+				  </p>
 				<p>
-				<br>Fill out the disaster relief form here to receive assistance:<br> <a class="button" href="forms/welcome1.php" target="_blank">Disaster Relief Form </a></p>	<!-- Link to the Volunteer registration form -->
+				<br>
+				<!-- Link to the Volunteer registration form -->
 				<hr>
 				<br>
 				</div> <!-- close css division "content" -->

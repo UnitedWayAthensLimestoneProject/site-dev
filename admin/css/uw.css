@@ -67,8 +67,8 @@ body {
 	width: 90%;  
 	margin-right: auto;
 	margin-left: auto;
-  	border-right: 2px solid #0a0d4c;
-  	border-left: 2px solid #0a0d4c;
+  	border-right: 2px solid #005191;
+  	border-left: 2px solid #005191;
   	background: #FFFFFF;
   	
   	/***  CSS Rounded Corners  ***/
@@ -88,7 +88,7 @@ body {
 
 #adminWrapper {
 	width: 100%;
-  	background: #0a0d4c;
+  	background: #005191;
 	background-image: url(../images/bg_column.jpg);
   	background-repeat: repeat-y;
   	background-position: left top;
@@ -103,7 +103,7 @@ body {
 }
 
 div.banner{
-	background-color: #0a0d4c;
+	background-color: #005191;
     margin: 0 auto;
 	padding-top:15px;
 	padding-bottom:5px;
@@ -141,7 +141,7 @@ div.footer {
 	font-family:"Lucida Grande";
 	font-size:16px;
 	letter-spacing:2px;
-	background-color: #0a0d4c;
+	background-color: #005191;
 	color:white;
 	text-align: center;
 	clear: both;
@@ -192,7 +192,7 @@ div.leftright{
 	padding: 0;
 	list-style: none;
 	overflow: hidden; 	
-	background-color: #0a0d4c;
+	background-color: #005191;
 }
 
 #mainNav li {
@@ -282,7 +282,7 @@ div.leftright{
 #divLinks {
   width: 60%;
   margin-left: 15%;
-  max-width:200px;
+  max-width:100px;
 }
 
 #h2Links {
@@ -300,6 +300,7 @@ div.leftright{
 #liLinks {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
   border-bottom: 1px solid #ccc;
+  border-bottom-width:thin;
 }
 
 #liLinks:last-child {
@@ -310,7 +311,7 @@ div.leftright{
   text-decoration: none;
   color: #000;
   display: block;
-  width: 100%;
+  width: 80%;
   
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
   -moz-transition: font-size 0.3s ease, backgound-color 0.3s ease;
@@ -320,7 +321,7 @@ div.leftright{
 }
 
 #liLinks a:hover {
-  font-size: 30px;
+  font-size: 25px;
   background: #f6f6f6;
 }
 
@@ -329,7 +330,7 @@ div.leftright{
 	padding: 0;
 	margin: 0 4px;
 	width: 100%;
-	border-bottom: 1px solid #0a0d4c;	
+	border-bottom: 1px solid #005191;	
 }
 
 #adminNav a {
@@ -358,12 +359,13 @@ div.leftright{
 
 #admin_form_container
 {
+	background-position: center;
 	background: #fff;
 	float: left;
 	text-align: left;
 	width: 87%;
 	margin-right: auto;
-	min-height: 750px;
+	min-height: 900px;
 }
 
 @media (max-width:1250px){  
@@ -506,8 +508,7 @@ div.leftright{
 	float: left;
 	text-align: left;
 	width: 85%;
-	margin-right: auto;
-	min-height: 600px; 	
+	min-height: 100px; 	
 }
 
 #editgrptable
@@ -1410,4 +1411,13 @@ table.editopptable td {
 
 .vidSection {
   margin-top: 20px;
+}
+
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	  -webkit-column-gap: 190px;
+     -moz-column-gap: 190px;
+          column-gap: 190px;
 }

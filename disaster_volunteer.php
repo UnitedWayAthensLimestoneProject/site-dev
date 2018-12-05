@@ -22,23 +22,39 @@
 	<link href="inc/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
 	<link href="inc/css/style.css" type="text/css" rel="stylesheet">
 	<!-- include the css style sheet style.css -->
-	</head>
+	<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+.style2 {font-size: 18px}
+.style3 {font-size: 16px}
+-->
+    </style>
+</head>
 		<body>
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-				<h1>Get Involved</h1> <!-- Header 1 style -->
-				<p><img src="images/united_kid.png" alt="Get Involved" class="center"></p> <!-- picture -->
+				<h1 align="center" class="style1">&nbsp;</h1> 
+				<!-- Header 1 style -->
+				<p align="center"><img src="images/united_kid.png" alt="Get Involved" class="center"></p> 
+				<!-- picture -->
 
-				<h2>GIVE AN HOUR. GIVE A SATURDAY. GIVE YOUR BEST.</h2> <!-- Header 2 style -->
+				<h2 align="center" class="style2">GIVE AN HOUR. GIVE A SATURDAY. GIVE YOUR BEST.</h2> 
+				<!-- Header 2 style -->
 				<!-- paragraph -->
+				<p align="center">
+                  <br>Sign up now to volunteer with the United Way of Athens-Limestone County:<br><br> <a class="button" href="forms/safety_brief.php" target="_blank">Disaster Volunteer Registration Form </a></p>	<!-- Link to the Volunteer registration form -->
+				  </div>
+				<p align="center">&nbsp;</p>
 				<p>The United Way is working to advance the common good by focusing on education, income and health: the building blocks for a good life. But we can't do it alone. We need the heads, hands and hearts of committed people like you to help us.
-				<br><br>Whether it is important to you to solve a community problem, advance a worthy cause or to develop as a person, volunteering offers many benefits in appreciation for the gift of your time and expertise.</p>
-				<ul> <!-- unordered list -->
+				  <br>
+				  <br>
+				  Whether it is important to you to solve a community problem, advance a worthy cause or to develop as a person, volunteering offers many benefits in appreciation for the gift of your time and expertise.</p>
+			  <ul> <!-- unordered list -->
 					<li><span>Make important networking contacts</span></li>
 					<li><span>Learn or develop skills</span></li>
 					<li><span>Teach your skills to others</span></li>
@@ -55,16 +71,19 @@
 				</ul>
 				<!-- paragraph -->
 				<p>Put your talents to work for your community. Volunteer!<br>
-				<br>Sign up now to volunteer with the United Way of Athens-Limestone County:<br> <a class="button" href="forms/safety_brief.php" target="_blank">Disaster Volunteer Registration Form </a></p>	<!-- Link to the Volunteer registration form -->
+				</p>	
+				<!-- Link to the Volunteer registration form -->
 
-				<hr> <!-- horizontal bar -->
-				<h2>United Way Gear Shop</h2> <!-- Header 2 style -->
+			  <hr> <!-- horizontal bar -->
+
+				<h2 align="center">United Way Gear Shop</h2> 
+				<!-- Header 2 style -->
 				<!-- paragraph -->
-				<p><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
+				<p align="center"><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
 				</p>
 				<hr> <!-- horizontal bar -->
 				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

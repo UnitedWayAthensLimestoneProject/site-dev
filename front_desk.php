@@ -26,19 +26,19 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
 				<h1>Volunteer Front Desk Program</h1> <!-- Header 1 style -->
 				<!-- paragraph -->
-				<p>RSVP members volunteer as receptionists for our front desk in the lobby of
+				<p>Volunteer as a receptionist for our front desk in the lobby of
 				United Way. The program has enhanced the way United Way interacts with the
 			  public as they enter the facility.</br></br> Please Contact Shelley Jones at:</br><a href="tel:2562332323">256-233-2323</a> </br> or </br> <a href="mailto:shelleyjones@unitedwayalc.com?" title="shelleyjones@unitedwayalc.com">shelleyjones@unitedwayalc</a><br></p>
-			  <hr> <!-- horizontal bar -->
+			  <!--<hr> <!-- horizontal bar -->
 
-				<h2>United Way Gear Shop</h2> <!-- Header 2 style -->
+				 <!--<h2>United Way Gear Shop</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
-				<p><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
+				 <!--<p><a href="http://www.liveunitedgear.com/" target="_blank"><img src="images/gearshop.jpg" alt="Get Gear" width="150" height="75" style="border: none;"></a> <!-- picture with link to liveunitedgear.com -->
 				</p>
 				<hr> <!-- horizontal bar -->
 				</div> <!-- close css division "content" -->

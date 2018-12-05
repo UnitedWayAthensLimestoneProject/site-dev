@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="add_agency_opp.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_damage.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_disaster.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_donation.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_email.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_group.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="add_volunteer.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="app_config.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="app_config.php~" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="authorize.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="database_connection.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="functions.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="nloum.functions.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="notes on db.txt" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_agencies.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_damage.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_damage_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_disaster.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_disaster_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_donation.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_donation_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_email.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_groups.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_groups_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_opportunities.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_opps_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_skills.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_users.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_users_password.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_volunteers.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="process_admin_volunteer_reviews.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="show_error.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+<file name="view.php" server="Z:/" local="131568032140000000" remote="131568032140000000" />
+</dwsync>

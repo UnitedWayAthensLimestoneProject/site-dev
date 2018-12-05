@@ -526,7 +526,7 @@ $javascript .= "
 		
 		</div>
 		<div class="footer">
-			Designed by Athens State University
+			Designed by Athens State University Computer Science Dept. 2018
 		</div>
 	</div>
 	</div>

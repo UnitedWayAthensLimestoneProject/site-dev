@@ -22,21 +22,32 @@
 	<link href="inc/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
 	<link href="inc/css/style.css" type="text/css" rel="stylesheet">
 	<!-- include the css style sheet style.css -->
-	</head>
+	<style type="text/css">
+<!--
+.style1 {
+	font-size: 24px;
+	color: #FF9933;
+}
+-->
+    </style>
+</head>
 		<body>
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!--Sidebar Code-
+< ?php include("sidebar.php");?> ->
 <!-- Main Content Starts Below-->
-				<div class="content"> <!-- css division "content" -->
-						<h1>Student United Way</h1> <!-- Header 1 style -->
-				          <!-- paragraph -->
-				          <p>Student United Way is a local student organization, each club is reflective of its local
+				<div class="content"> 
+				  <div align="center">
+				    <!-- css division "content" -->
+				    <img src="images/studentUW.jpg" alt="Student United Way" class="center"/>
+			      </div>
+				  <h1>Student United Way</span></h1>
+				  <p>Student United Way is a local student organization, each club is reflective of its local
 				          United Way, campus, and community but it also is part of a national movement of young
-				          people working and learning together and meets national standards accordingly.</p>
-				          <img src="images/studentUW.jpg" alt="Student United Way" class="center"/> <!-- picture -->
+			            people working and learning together and meets national standards accordingly.</p>
+						<!-- picture -->
 				          <!-- paragraph -->
 				          <p>Through Student United Way, students will learn new skills gain experience, and grow
 				          as leaders as they work to advance the common good in your community and on campus.</p>
@@ -55,8 +66,8 @@
 								<a href="https://www.facebook.com/studentuw" target="_blank">Join Student United Way on Facebook.</a><br> <!-- Student United Way hyperlink -->
 							</p></ul>
 							<hr> <!-- horizontal bar -->
-				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		  </div> <!-- close css division "content" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

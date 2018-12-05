@@ -56,7 +56,7 @@
 		</div>	
 		
 			<div class="footer" style="margin:25px 0px">
-				Designed by Athens State University
+				Designed by Athens State University Computer Science Dept. 2018
 			</div>
 
 </body>

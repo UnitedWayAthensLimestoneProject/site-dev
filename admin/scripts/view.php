@@ -71,7 +71,10 @@ EOD;
 				 "    });\n" .
 				 "</script>\n";
 		}
-		echo "</head>\n";
+		if (basename($_SERVER['PHP_SELF']) == "view_event.php")
+
+          echo '<link rel="stylesheet" type="text/css" href="css/calendar.css">'; //style sheet for calendar
+          echo "</head>\n";
 	}
 
 	// Displays the html code for the start of body through the Menus
@@ -87,7 +90,7 @@ EOD;
 EOD;
 		}
 		echo <<<EOD
-		<div class="banner"><img src="images/uwbanner2.jpg" alt="United Way Banner" width="100%" /></div>
+		<div class="banner"><img src="images/uwbanner.jpg" alt="United Way Banner" width="100%" /></div>
 		<div class="PrintOnly"><img src="images/uwbanner_print.jpg" /></div>
 		<div id="menu" align="center">
 			<ul id="mainNav" class="center">
@@ -243,9 +246,14 @@ EOD;
 				<li><a href="view_event.php" id="adminSkillsLink">Calendar</a></li>
         <!-- Fall 2017 (Start) -->
         <li><a href="admin_massEmail.php" id="adminMassEmail">Email</a></li>
-        <li><a href="admin_sidebar.php" id="adminSidebar">Edit Sidebar</a></li>
-				<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
+        <li><a href="admin_Newsletter.php" id="adminNewsLetter">Newsletter</a></li>
+         <!-- Fall 2018 (Added Homepage) -->
+        <li><a href="admin_homepage.php" id="adminSidebar">Edit Homepage</a></li>
+        <!-- Fall 2018 (Added Advocate) -->
+        <li><a href="admin_advocate.php" id="adminSidebar">Edit Advocate</a></li>
+       		<li><a href="admin_videos.php" id="adminVideos">Edit Videos</a></li>
         <!-- Fall 2017 (End) -->
+        <li><a href="admin_resources.php" id="adminResources">Resources</a></li>
 				<li><a href="admin_skills.php" id="adminSkillsLink">Skills</a></li>
 				<li><a href="admin_users.php" id="adminUsersLink">Users</a></li>
         <!-- **ASU2016** Added Email Volunter on 7/10/2016 -->
@@ -268,6 +276,7 @@ EOD;
 				<li><a href="admin_reviews_disaster.php" id="{$adminReviewDisasterLinkFormat}">New Disaster</a></li>
 				<li><a href="admin_reviews_damage.php" id="{$adminReviewDamageLinkFormat}">New Damage</a></li>
 				<li><a href="admin_reviews_donation.php" id="{$adminReviewDonationLinkFormat}">New Donation</a></li>
+                <li><a href="admin_sidebar.php" id="adminSidebar">Edit Sidebar</a></li>
 			<!-- **ASU2016 Removed the Emails option by request of customer on 6/18/2016
 				<li><a href="admin_emails.php" id="adminEmailsLink">Emails</a></li>
 			-->				

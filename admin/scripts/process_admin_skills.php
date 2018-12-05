@@ -5,7 +5,7 @@
 	
 	$form_id = $_REQUEST['form_id'];
 	
-	if ($form_id == 'submit_form_admin_skills_add') {
+	if ($form_id == 'submit_form_admin_skills_add' or $_REQUEST['edit_skill_id']=="") {
 			
 		$add_skill_name = mysql_real_escape_string(trim($_REQUEST['add_skill_name']));
 		$add_skill_group = mysql_real_escape_string(trim($_REQUEST['add_skill_group']));
@@ -16,12 +16,13 @@
  					  			  "(skill_name, skill_group, skill_comments) " .
  					  			  "VALUES ('%s', '%s', '%s');",
  					  			  $add_skill_name, $add_skill_group, $add_skill_comments);
+								
 				  
  			mysql_query($insert_sql)
 				or handle_error("an error occurred while adding skill", mysql_error());
 				
 			// Redirect to view volunteer info
-			$msg = "The skill has been successfully added.";
+			$msg = $form_id."The skill has been successfully added.";
 			header("Location: ../admin_skills.php?success_message=" . $msg);
 			
 		} catch (Exception $exc) {
@@ -31,7 +32,7 @@
 		
 	}
 	
-	if ($form_id == 'submit_form_admin_skills_edit_selection') {
+	elseif ($form_id == 'submit_form_admin_skills_edit_selection') {
 		
 		$edit_skill_id = $_REQUEST['edit_skill_id'];
 		$edit_skill_name = mysql_real_escape_string(trim($_REQUEST['edit_skill_name']));

@@ -29,9 +29,35 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!--< ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div class="content"> <!-- css division "content" -->
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="images/tft_promo_icon.gif" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+		<div class="content"> <!-- css division "content" -->
 		          <h1>Videos</h1><!-- Header 1 style -->
           
 							<?php
@@ -81,7 +107,7 @@
 					<hr> <!-- horizontal bar -->
 				  <h1>Photos</h1> <!-- Header 1 style -->
 				  <!--http://embedsocial.com/embed-gallery.php-->
-				  <iframe src="http://embedsocial.com/facebook_album/album_photos/245161305499772" width="880" height="1500" style="border: none;"></iframe> <!-- Embedded Facebook Photo Album -->
+				  <iframe src="http://docs.google.com/gview?url=http://www.orimi.com/pdf-test.pdf&embedded=true" style="width:900px; height:500px;" frameborder="0"></iframe> <!-- Embedded Facebook Photo Album -->
 				  <hr>	<!-- horizontal bar -->
 				</div> <!-- close css division "content" -->
 			</div>  <!-- close css division "wrapper2" -->

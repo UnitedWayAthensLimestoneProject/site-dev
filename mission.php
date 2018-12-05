@@ -27,10 +27,13 @@
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
-				<div class="content""> <!-- css division "content" -->
+				<div class="content""> 
+				  <div align="center">
+				    <!-- css division "content" -->
+				    <img src="images/UW_Athens2.jpg" alt="Athens United Way" class="center"/> 
+				    <!-- picture -->
+			        </div>
 			          <h1>Our Mission</h1> <!-- Header 1 style -->
 			          <!-- paragraph -->
 			          <p>United Way of Athens-Limestone County secures resources to include financial support, volunteers and in kind donations of goods and services.
@@ -46,6 +49,12 @@
 					      <li><span>Responsive to community</span></li>
 				      </ul>
 				      <hr> <!-- horizontal bar -->
+                      <a name="vision"><h1>Our Vision</h1> <!-- Header 1 style -->
+			          <!-- paragraph -->
+			          <p>United Way of Athens-Limestone County will be a leader in our community
+			          where all individuals and families achieve their potential through education
+			          which leads to financial stability, and healthier lifestyles.</p></a>
+                  <hr> <!-- horizontal bar -->
 				      <h1>Our Goals</h1> <!-- Header 1 style -->
 				      <!-- paragraph -->
 				      <p>In 2008, United Way initiated a 10-year program designed to achieve the following goals by 2018:</p>

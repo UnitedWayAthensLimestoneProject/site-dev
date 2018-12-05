@@ -29,18 +29,22 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
 				<div class="content">  <!-- css division "content" -->
-								  <h1>Stuff the Bus</h1> <!-- Header 1 style -->
+								  <h1 align="center"><img src="images/bus.jpg" alt="Stuff the Bus" class="center"/></h1>
+								  <h1>Stuff the Bus</h1>
+								  <!-- Header 1 style -->
 						          <!-- paragraph -->
-						          <p>We are collecting new and gently used books for K-12 children. We will give the
+		          <p>We are collecting new and gently used books for K-12 children. We will give the
 						          books to local schools to use for incentives or as tools or library books. Donate
 						          books at our office or one of several area locations!
-						          <br><br><img src="images/bus.jpg" alt="Stuff the Bus" class="center"/></p> <!-- picture -->
+						          <br><br>
+						          </p> 
+						          <!-- picture -->
 						          <hr> <!-- horizontal bar -->
-				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+		  </div> <!-- close css division "content" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

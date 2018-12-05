@@ -169,7 +169,7 @@ EOD;
 		<ul>
 				<li>
 					<label class="description" for="type_of_work">I am willing to volunteer for: (Please check all the apply.) </label>
-					<span class="left" style="width:200px">
+					<span class="center" style="width:200px">
 						<input name="disaster" class="checkbox" type="checkbox" 
 							value="1" <?php if ($vol_row['disaster']==1) {echo 'checked="checked"';} ?>>
 						<label class="choice" for="disaster">Disaster Relief</label>
@@ -391,7 +391,7 @@ EOD;
 		
 	</div>
 	<div class="footer">
-		Designed by Athens State University
+		Designed by Athens State University Computer Science Dept. 2018
 	</div>
 	</div>
 	</body>

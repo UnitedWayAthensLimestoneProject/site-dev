@@ -46,6 +46,7 @@
 		$newTime = date("H:i", strtotime($_POST["time"]));
 
 		$datedb = mysql_prep($_POST["date"]);
+		$enddatedb = mysql_prep($_POST["enddate"]);
 		$timedb = mysql_prep($newTime);
 		$locationdb = mysql_prep($_POST["location"]);
 		$eventdb = mysql_prep($_POST["event"]);
@@ -54,6 +55,7 @@
 
 		$query= "UPDATE calendar SET ";
 		$query .= "date = '{$datedb}', ";
+	    $query .= "enddate = '{$enddatedb}', ";
 		$query .= "time = '{$timedb}', ";
 		$query .= "event = '{$eventdb}', ";
 		$query .= "location = '{$locationdb}' ";
@@ -149,6 +151,7 @@ $(document).ready(function() {
     <form action = "edit_event.php?id=<?php echo urlencode($eventID["id"]); ?>" method= "post">
 
 		<input type = "text" name = "date" id="datepicker" placeholder="Date" value="<?php echo htmlspecialchars($eventID["date"]); ?>"required readonly>
+        <input type = "text" name = "enddate" id="datepicker" placeholder="Date" value="<?php echo htmlspecialchars($eventID["enddate"]); ?>"required readonly>
 
 		<input type = "text" name = "time" id="timepicker" placeholder="Time" value="<?php echo htmlspecialchars($eventID["time"]); ?>"required>
 

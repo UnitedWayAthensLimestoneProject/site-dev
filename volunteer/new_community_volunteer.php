@@ -107,6 +107,7 @@
 		
 		});
 	</script>
+    <script src="../scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -364,11 +365,15 @@
 			</li>
 			<li class="buttons">
 				<img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image" />
-                                                                   <object type="application/x-shockwave-flash"data="/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&amp;
+                                                                   <script type="text/javascript">
+AC_FL_RunContent( 'type','application/x-shockwave-flash','data','/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&
+                                                                        bgColor1=#fff&bgColor2=#fff&iconColor=#777&borderWidth=1&borderColor=#000','width','25','height','25','movie','/securimage/securimage_play?audio_file=/securimage/securimage_play.php&
+                                                                        bgColor1=#fff&bgColor2=#fff&iconColor=#777&borderWidth=1&borderColor=#000' ); //end AC code
+</script><noscript><object type="application/x-shockwave-flash"data="/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&amp;
                                                                         bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#777&amp;borderWidth=1&amp;borderColor=#000" width="25" height="25">
                                                                    <param name="movie" value="/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&amp;
                                                                         bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#777&amp;borderWidth=1&amp;borderColor=#000" />
-                                                                   </object><br>
+                                                                   </object></noscript><br>
 				<input type="text" name="captcha_code" size="15" maxlength="6" />
                                                                    <br> 
                                                                    <a href="#" onclick="document.getElementById('captcha').src = '../securimage/securimage_show.php?' + Math.random(); 
@@ -384,7 +389,7 @@
 		
 	</div>
 	<div class="footer">
-		Designed by Athens State University
+		Designed by Athens State University Computer Science Dept. 2018
 	</div>
 	</div>
 </body>

@@ -22,18 +22,30 @@
 	<link href="inc/css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
 	<link href="inc/css/style.css" type="text/css" rel="stylesheet">
 	<!-- include the css style sheet style.css -->
+    <style>
+	.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	}
+	.style1 {font-size: 24px}
+    .style2 {
+	font-size: 18px
+}
+    </style>
 	</head>
 		<body>
 		<?php get_home_banner(); ?>
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
-<!--Sidebar Code-->
-<?php include("sidebar.php");?>
 <!-- Main Content Starts Below-->
+<h2 align="center" class="style1">Board of Directors</h2>
+<p align="center">&nbsp;</p>
+<!-- Header 2 style -->
 				<div class="content"> <!-- css division "content" -->
-				<h2>Board of Directors</h2> <!-- Header 2 style -->
-				<!-- paragraph -->
-				<p>
+				<div class="newspaper">
+                <!-- paragraph -->
+				<p class="style2">
 					Annette Barnes</br>
 					Kay Burlingame</br>
 					Betty Christopher</br>
@@ -59,16 +71,17 @@
 					Adam Smith</br>
 					Dr. Denny Smith</br>
 					Gary Van Wagnen</br>
-					Mike Willis</br>
+					Mike Willis</br></br>
 				</p>
-					<p style="color: #f57814"><u>Ex Officio</u></br></p>
-				<p>
+                <p class="style2" style="color: #f57814"><u>Ex Officio</u></br></p>
+				<p class="style2">
 					Ronnie Marks</br>
 					Mark Yarborough</br>
 					Angie Nazaretian (Emeritus)</br>
 				</p>
+</div>
 				<hr> <!-- horizontal bar -->
-				</div> <!-- close css division "content" -->
+  </div> <!-- close css division "content" -->
 			</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->

@@ -29,18 +29,25 @@
 		<div id="darkframe"> <!-- css division "darkframe" - this is the blue border around the content -->
 		<?php get_main_menu(); ?>
 <!--Sidebar Code-->
-<?php include("sidebar.php");?>
+<!-- < ?php include("sidebar.php");?> -->
 <!-- Main Content Starts Below-->
-				<div class="content">  <!-- css division "content" -->
-						          <h1>Toys for Tots</h1> <!-- Header 1 style -->
+				<div class="content">  
+				  <div align="center">
+				    <!-- css division "content" -->
+				    <br>
+				    <br>
+				    <img src="images/tft_promo_icon.gif" alt="Toys for Tots" width="200" height="100" class="center"/>
+				    </p>
+			      </div>
+				  <h1>Toys for Tots</h1> <!-- Header 1 style -->
 						          <!-- paragraph -->
-						          <p>We join with the United States Marine Corps in helping our community provide
+		          <p>We join with the United States Marine Corps in helping our community provide
 						          toys for children whose families may not be able to provide Christmas presents
 						          for them.
-						          <br><br><img src="images/tft_promo_icon.gif" alt="Toys for Tots" width="200" height="100" class="center"/></p> <!-- picture -->
-						          <hr> <!-- horizontal bar -->
-				</div> <!-- close css division "content" -->
-			</div>  <!-- close css division "wrapper2" -->
+						           <!-- picture -->
+		          <hr> <!-- horizontal bar -->
+		  </div> <!-- close css division "content" -->
+		</div>  <!-- close css division "wrapper2" -->
 		<?php get_home_footer(); ?>
 		</div> <!-- close css division "darkframe" - this is the blue border around the content -->
 		</body>

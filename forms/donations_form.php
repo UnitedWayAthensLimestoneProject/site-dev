@@ -1,4 +1,4 @@
-e<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -81,6 +81,7 @@ e<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 		});
 </script>
 
+<script src="../scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 </head>
 <body>
 <body>
@@ -254,11 +255,15 @@ e<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 
 <li class="buttons">
 				<img id="captcha" src="/inc/securimage/securimage_show.php" alt="CAPTCHA Image" />
-                                                                   <object type="application/x-shockwave-flash"data="/inc/securimage/securimage_play.swf?audio_file=/inc/securimage/securimage_play.php&amp;
+                                                                   <script type="text/javascript">
+AC_FL_RunContent( 'type','application/x-shockwave-flash','data','/inc/securimage/securimage_play.swf?audio_file=/inc/securimage/securimage_play.php&
+                                                                        bgColor1=#fff&bgColor2=#fff&iconColor=#777&borderWidth=1&borderColor=#000','width','25','height','25','movie','/inc/securimage/securimage_play?audio_file=/inc/securimage/securimage_play.php&
+                                                                        bgColor1=#fff&bgColor2=#fff&iconColor=#777&borderWidth=1&borderColor=#000' ); //end AC code
+</script><noscript><object type="application/x-shockwave-flash"data="/inc/securimage/securimage_play.swf?audio_file=/inc/securimage/securimage_play.php&amp;
                                                                         bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#777&amp;borderWidth=1&amp;borderColor=#000" width="25" height="25">
                                                                    <param name="movie" value="/inc/securimage/securimage_play.swf?audio_file=/inc/securimage/securimage_play.php&amp;
                                                                         bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#777&amp;borderWidth=1&amp;borderColor=#000" />
-                                                                   </object><br>
+                                                                   </object></noscript><br>
 				<input type="text" name="captcha_code" size="15" maxlength="6" />
                                                                    <br> 
                                                                    <a href="#" onclick="document.getElementById('captcha').src = '/inc/securimage/securimage_show.php?' + Math.random(); 

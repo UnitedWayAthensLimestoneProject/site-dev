@@ -43,16 +43,19 @@
 	{
 		//Convert from 12 to 24 hr time format
 		$newTime = date("H:i", strtotime($_POST["time"]));
+		$newEndTime = date("H:i", strtotime($_POST["endtime"]));
 
 		$datedb = mysql_prep($_POST["date"]);
+		$enddatedb = mysql_prep($_POST["enddate"]);
 		$timedb = mysql_prep($newTime);
 		$locationdb = mysql_prep($_POST["location"]);
 		$eventdb = mysql_prep($_POST["event"]);
 		$id = $eventID["id"];
+		$endtimedb = mysql_prep($newEndTime);
 
 
-		$query = "INSERT INTO calendar (date, time, event, location) VALUES (";
-		$query .= " '{$datedb}', '{$timedb}', '{$eventdb}', '{$locationdb}' ";
+		$query = "INSERT INTO calendar (date, enddate, time, endtime, event, location ) VALUES (";
+		$query .= " '{$datedb}', '{$enddatedb}', '{$timedb}', '{$endtimedb}', '{$eventdb}', '{$locationdb}' ";
 		$query .= ")";
 		$result= mysql_query($query);
 
@@ -138,8 +141,10 @@ $(document).ready(function() {
     <form action = "create_event.php" method= "post">
 
 		<input type="text" name = "date" id="datepicker" placeholder ="Date" required readonly>
+        	<input type="text" name = "enddate" id="datepicker" placeholder ="End Date" required readonly>
 
 		<input type="text" name = "time" id="timepicker" placeholder="Time" required>
+        <input type="text" name = "endtime" id="timepicker" placeholder="End Time" required>
 
  		<input type = "text" name = "event" placeholder = "Event Name"  maxlength="250" required>
 
@@ -150,7 +155,10 @@ $(document).ready(function() {
 
   </div>
 </div>
-
-<body>
+<div class="footer">
+			Designed by Athens State University Computer Science Dept. 2018
+		</div>
+        </div>
+	</div>
 </body>
 </html>
