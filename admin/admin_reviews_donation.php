@@ -280,7 +280,7 @@ $javascript .= "
 			</div>
 			
 
-			<div id="editvoltable"></div>
+			<div id="editvoltable" style="height: 650px"></div>
 			
 		</div>
 		<div class="footer">
