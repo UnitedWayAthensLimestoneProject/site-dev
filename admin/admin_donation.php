@@ -330,7 +330,7 @@ $javascript .= "
 				<p>Allows Administrators to edit a donation's information.<br>(NOTE: donations that have not been approved by admin review, will not be listed below.)</p>
 			</div>	
 			
-			<div id="editvoltable"></div>
+			<div id="editvoltable" style="height: 650px"></div>
 			
 			<center>
 			<form name="form_search_for_donation" id="form_search_for_donation" method="post" style="margin:25px 10px" 
