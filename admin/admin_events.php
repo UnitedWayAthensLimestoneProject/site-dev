@@ -242,7 +242,7 @@ $javascript .= "
 				<p>Allows Administrators to edit event information.</p>
 			</div>	
 			
-			<div id="editvoltable"></div>
+			<div id="editvoltable" style="height: 650px"></div>
 			
 			<center>
 			<form name="form_search_for_event" id="form_search_for_event" method="post" style="margin:25px 10px" 
