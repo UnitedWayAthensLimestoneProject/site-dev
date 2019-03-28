@@ -83,7 +83,7 @@
 				<h2>Event Administration</h2>
 			</div>	
 			
-			<div id="editvoltable"></div>
+			<div id="editvoltable" style="height: 650px"></div>
 			
 	<form action = "admin_events_calendar.php" method= "post">
 	
